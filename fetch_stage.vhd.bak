@@ -1,0 +1,53 @@
+library ieee;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.riscv_pkg.all; 
+-------------------------------------------------------------------------
+entity fetch_stage is 
+	port (clk : in std_logic; 
+		fetch_sel : in std_logic;
+		branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0); 
+		reg_IF_ID : out std_logic_vector(95 downto 0));
+end fetch_stage;
+-------------------------------------------------------------------------
+architecture fetch_a of fetch_stage is 
+	
+	signal PC : std_logic_vector(WORD_SIZE-1 downto 0) <= ZERO32;
+	signal next_PC : std_logic_vector(WORD_SIZE-1 downto 0);
+	signal ft_instruction : std_logic_vector(WORD_SIZE-1 downto 0);
+
+
+	-- The output signals are all present in reg_IF_ID and we use alias
+	-- to define which bits are used for what
+	-- 0 to 31: PC / 32 to 63: Instruction / 95 to 64: next PC
+	alias next_PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(95 downto 64);
+	alias ft_instruction_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(63 downto 32);
+	alias PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(31 downto 0); 
+
+	begin 
+
+		-- AddPC
+		next_PC <= std_logic_vector(unsigned(PC) + 4);
+
+		-- MuxPC
+		with fetch_sel select 
+			PC <= next_PC when '0', 
+				  branch_PC when '1',
+				  ZERO32 when others;
+
+		-- InsMem
+		InstrMEM: memInstr 
+			generic map (
+				WIDTH => WORD_SIZE,
+				WADDR => WORD_SIZE) 
+			port map (
+				ADDRESS  => PC,
+				clk	=> clk,
+				Q => ft_instruction);
+		
+		-- Reg_IF_ID
+		next_PC_A <= next_PC;
+		ft_instruction_A <= ft_instruction;
+		PC_A <= PC;
+ 
+end fetch_a; 

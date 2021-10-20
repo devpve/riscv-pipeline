@@ -2,13 +2,13 @@ library ieee;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.riscv_pkg.all;
-
+-------------------------------------------------------------------------
 entity genImm32 is 
 	port (
 		instr : in std_logic_vector(31 downto 0);
 		imm32 : out signed(31 downto 0));
 end genImm32;
-
+-------------------------------------------------------------------------
 architecture a of genImm32 is 
 	
 begin 

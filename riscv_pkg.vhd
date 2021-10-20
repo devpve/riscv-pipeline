@@ -184,34 +184,34 @@ package riscv_pkg is
 		alu_src,
 		breg_wr:	out std_logic
 		);
-end component;
+	end component;
 
-component genImm32 is
-	port (
-		instr	: in std_logic_vector(WORD_SIZE - 1 downto 0);
-		imm32 : out std_logic_vector(WORD_SIZE-1 downto 0)
+	component genImm32 is
+		port (
+			instr	: in std_logic_vector(WORD_SIZE - 1 downto 0);
+			imm32 : out std_logic_vector(WORD_SIZE-1 downto 0)
+			);
+	end component;
+
+	component data_mem is
+		port
+		(
+			address	: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+			clock		: IN STD_LOGIC;
+			data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			wren		: IN STD_LOGIC ;
+			q			: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 		);
-end component;
+	end component;
 
-component data_mem is
-	port
-	(
-		address	: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-		clock		: IN STD_LOGIC;
-		data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-		wren		: IN STD_LOGIC ;
-		q			: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
-	);
-end component;
+	component clk_div is
+		port
+		(
+			clk	  : in std_logic;
+			clk64   : out std_logic
+		);
 
-component clk_div is
-	port
-	(
-		clk	  : in std_logic;
-		clk64   : out std_logic
-	);
-
-end component;
+	end component;
 	
 --	procedure mux2x1 (signal x0, x1	: in std_logic_vector(WORD_SIZE-1 downto 0); 
 --							signal sel	: in std_logic;

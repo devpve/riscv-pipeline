@@ -1,0 +1,265 @@
+# Compile of fetch_stage.vhd failed with 2 errors.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of fetch_stage.vhd failed with 1 errors.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:35:58 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Init PC Fail
+#    Time: 5 ps  Iteration: 0  Instance: /testbench_fetch
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:37:57 on Oct 19,2021, Elapsed time: 0:01:59
+# Errors: 1, Warnings: 7
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:37:57 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Init PC Fail
+#    Time: 5 ps  Iteration: 0  Instance: /testbench_fetch
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:38:48 on Oct 19,2021, Elapsed time: 0:00:51
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:38:48 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:42:23 on Oct 19,2021, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 4
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:42:23 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:45:52 on Oct 19,2021, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 4
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:45:52 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 80 ps ###############
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/current_pc @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:22)
+#   Active process: /testbench_fetch/DUT/line__29 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#   Active process: /testbench_fetch/DUT/line__43 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#   Active process: /testbench_fetch/DUT/line__45 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 2 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 80 ps.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:48:23 on Oct 19,2021, Elapsed time: 0:02:31
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:48:23 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 0 ps ###############
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+#       Signal: /testbench_fetch/reg_IF_ID_out @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:23)
+#       Signal: /testbench_fetch/DUT/current_pc @ sub-iteration 0 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:22)
+#   Active process: /testbench_fetch/DUT/line__29 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#   Active process: /testbench_fetch/DUT/line__43 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#   Active process: /testbench_fetch/DUT/line__45 @ sub-iteration 1
+#     Source: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd:31
+#       Signal: /testbench_fetch/DUT/reg_IF_ID @ sub-iteration 2 at Value unknown (C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd:11)
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 0 ps.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:49:56 on Oct 19,2021, Elapsed time: 0:01:33
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:49:56 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Next PC Fail
+#    Time: 85 ps  Iteration: 0  Instance: /testbench_fetch
+# ** Error: Branch PC Fail
+#    Time: 110 ps  Iteration: 0  Instance: /testbench_fetch
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 20:50:49 on Oct 19,2021, Elapsed time: 0:00:53
+# Errors: 2, Warnings: 4
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 20:50:49 on Oct 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# End time: 20:51:11 on Oct 19,2021, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 2
