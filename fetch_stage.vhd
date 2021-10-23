@@ -17,7 +17,7 @@ architecture fetch_a of fetch_stage is
 	alias next_PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(95 downto 64);
 	alias ft_instruction_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(63 downto 32);
 	alias PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(31 downto 0); 
-
+	
 	-- PC / Instruction 
 	signal current_pc : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 	signal ft_instruction : std_logic_vector(WORD_SIZE-1 downto 0);

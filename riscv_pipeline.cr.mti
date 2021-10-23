@@ -1,4 +1,14 @@
-{C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd}
+{C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package riscv_pkg
+-- Compiling entity xreg
+-- Compiling architecture xreg_a of xreg
+
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,6 +17,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package riscv_pkg
 -- Compiling entity fetch_stage
 -- Compiling architecture fetch_a of fetch_stage
+
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package riscv_pkg
+-- Compiling entity genImm32
+-- Compiling architecture genImm32_a of genImm32
 
 } {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -18,6 +38,35 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity testbench_fetch
 -- Compiling architecture tb_fetch of testbench_fetch
 
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture tb of testbench
+
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package riscv_pkg
+-- Compiling entity testbench
+-- Compiling architecture tb of testbench
+
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package riscv_pkg
+-- Compiling entity decode_stage
+-- Compiling architecture decode_a of decode_stage
+
 } {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -27,6 +76,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package riscv_pkg
 -- Compiling entity memInstr
 -- Compiling architecture RTL of memInstr
+
+} {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package riscv_pkg
+-- Compiling entity testbench_decode
+-- Compiling architecture tb_decode of testbench_decode
 
 } {} {}} {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

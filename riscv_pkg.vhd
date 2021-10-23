@@ -13,7 +13,7 @@ package riscv_pkg is
 	constant INC_PC		: std_logic_vector(WORD_SIZE-1 downto 0) := (2=>'1', others=>'0');
 	
 	-- Type Declaration (optional)
-	type word_array is array (natural range<>) of std_logic_vector(WORD_SIZE-1 downto 0);
+	--type word_array is array (natural range<>) of std_logic_vector(WORD_SIZE-1 downto 0);
 	
 	-- Opcodes do RV32I
 	constant iRType		: std_logic_vector(6 downto 0) := "0110011";
@@ -148,7 +148,7 @@ package riscv_pkg is
 		ADDR : natural := BREG_IDX
 	);
 	port 
-	(
+	(	rst 	: in  std_logic;
 		clk		: in  std_logic;
 		wren  	: in  std_logic;
 		rs1		: in  std_logic_vector(ADDR-1 downto 0);
@@ -171,6 +171,15 @@ package riscv_pkg is
 	);
 	end component;
 	
+	component fetch_stage is 
+		port (clk  : in std_logic;
+			fetch_sel : in std_logic_vector(1 downto 0);
+			PC 		  : in std_logic_vector(WORD_SIZE-1 downto 0);
+			branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0);
+			reg_IF_ID : out std_logic_vector(95 downto 0));
+	end component;
+
+
 	component control is
 	port (
 		opcode : in std_logic_vector(5 downto 0);
@@ -189,7 +198,7 @@ package riscv_pkg is
 	component genImm32 is
 		port (
 			instr	: in std_logic_vector(WORD_SIZE - 1 downto 0);
-			imm32 : out std_logic_vector(WORD_SIZE-1 downto 0)
+			imm32 : out signed(WORD_SIZE-1 downto 0)
 			);
 	end component;
 

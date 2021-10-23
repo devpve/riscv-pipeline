@@ -5,11 +5,11 @@ use work.riscv_pkg.all;
 -------------------------------------------------------------------------
 entity genImm32 is 
 	port (
-		instr : in std_logic_vector(31 downto 0);
-		imm32 : out signed(31 downto 0));
+		instr : in std_logic_vector(WORD_SIZE-1 downto 0);
+		imm32 : out signed(WORD_SIZE-1 downto 0));
 end genImm32;
 -------------------------------------------------------------------------
-architecture a of genImm32 is 
+architecture genImm32_a of genImm32 is 
 	
 begin 
 
@@ -21,4 +21,4 @@ with (instr(6 downto 0)) select
 	        signed(instr(31 downto 12) & X"000") when "0110111", -- utype
 	        resize(signed(instr(31) & instr(19 downto 12) & instr(20) & instr(30 downto 21) & '0'), 32) when "1101111", --uj type
 			signed(ZERO32) when others;
-end a;
+end genImm32_a;
