@@ -19,7 +19,9 @@ package riscv_pkg is
 	constant iRType		: std_logic_vector(6 downto 0) := "0110011";
 	constant iILType		: std_logic_vector(6 downto 0) := "0000011";
 	constant iSType		: std_logic_vector(6 downto 0) := "0100011";
-	constant iBType		: std_logic_vector(6 downto 0) := "1100011";
+	constant iBType		: std_logic_vector(6 downto 0) := "1100011"; -- branch
+	-- descobre qual branch no funct3
+	-- função shift diferente
 	constant iIType		: std_logic_vector(6 downto 0) := "0010011";
 	constant iLUI			: std_logic_vector(6 downto 0) := "0110111";
 	constant iAUIPC		: std_logic_vector(6 downto 0) := "0010111";
@@ -33,7 +35,7 @@ package riscv_pkg is
 	constant iXOR3			: std_logic_vector(2 downto 0) := "100";
 	constant iADD3			: std_logic_vector(2 downto 0) := "000";
 	constant iOR3			: std_logic_vector(2 downto 0) := "110";
-	constant iSLTI3		: std_logic_vector(2 downto 0) := "010";
+	constant iSLTI3			: std_logic_vector(2 downto 0) := "010";
 	constant iAND3			: std_logic_vector(2 downto 0) := "111";
 	constant iSLTIU3		: std_logic_vector(2 downto 0) := "001";
 	constant iSR3			: std_logic_vector(2 downto 0) := "101";
@@ -41,8 +43,8 @@ package riscv_pkg is
 	constant iBNE3			: std_logic_vector(2 downto 0) := "001";
 	constant iBLT3			: std_logic_vector(2 downto 0) := "100";
 	constant iBGE3			: std_logic_vector(2 downto 0) := "101";	
-	constant iBLTU3		: std_logic_vector(2 downto 0) := "110";
-	constant iBGEU3		: std_logic_vector(2 downto 0) := "111";
+	constant iBLTU3			: std_logic_vector(2 downto 0) := "110";
+	constant iBGEU3			: std_logic_vector(2 downto 0) := "111";
 	constant iLB3			: std_logic_vector(2 downto 0) := "000";
 	constant iLH3			: std_logic_vector(2 downto 0) := "001";
 	constant iSLL3			: std_logic_vector(2 downto 0) := "001";
@@ -57,14 +59,14 @@ package riscv_pkg is
 	-- Campo funct7 / bit30	
 	constant iSUB7			: std_logic := '1';
 	constant iSRA7			: std_logic := '1';
-	constant iSRAI7		: std_logic := '1';
+	constant iSRAI7			: std_logic := '1';
 
 	
 	-- Controle ULA
 	constant ULA_ADD		: std_logic_vector(3 downto 0) := "0000";
 	constant ULA_SUB		: std_logic_vector(3 downto 0) := "0001";
 	constant ULA_AND		: std_logic_vector(3 downto 0) := "0010";
-	constant ULA_OR		: std_logic_vector(3 downto 0) := "0011";
+	constant ULA_OR			: std_logic_vector(3 downto 0) := "0011";
 	constant ULA_XOR		: std_logic_vector(3 downto 0) := "0100";
 	constant ULA_SLL		: std_logic_vector(3 downto 0) := "0101";
 	constant ULA_SRL		: std_logic_vector(3 downto 0) := "0110";
@@ -77,16 +79,25 @@ package riscv_pkg is
 	constant ULA_SNE		: std_logic_vector(3 downto 0) := "1101";
 	
 	-- Aliases
-
 	component rv_pipe is
-	port 
-	(
-		clk		: in std_logic;
-		clk_rom	: in std_logic;
-		rst	   : in std_logic;
-		data  	: out std_logic_vector(WORD_SIZE-1 downto 0)
-	);
+		port (
+			clk		: in std_logic;
+			clk_rom	: in std_logic;
+			rst	   : in std_logic;
+			data  	: out std_logic_vector(WORD_SIZE-1 downto 0)
+		);
 	end component;
+
+	component fetch_stage is 
+		port (
+			clk 	 	: in std_logic; 
+			PC_src 		: in std_logic;
+		    PC   		: in std_logic_vector(WORD_SIZE-1 downto 0);
+			branch_PC 	: in std_logic_vector(WORD_SIZE-1 downto 0); 
+			reg_IF_ID 	: out std_logic_vector(63 downto 0)
+		);
+	end component;
+
 	
 	component reg is
 	generic (
@@ -171,23 +182,19 @@ package riscv_pkg is
 	);
 	end component;
 	
-	component fetch_stage is 
-		port (clk  : in std_logic;
-			fetch_sel : in std_logic_vector(1 downto 0);
-			PC 		  : in std_logic_vector(WORD_SIZE-1 downto 0);
-			branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0);
-			reg_IF_ID : out std_logic_vector(95 downto 0));
-	end component;
 
 
 	component control is
 	port (
+		clk  : in std_logic;
 		opcode : in std_logic_vector(5 downto 0);
 		op_ula :	out std_logic_vector(1 downto 0);
+		pc_src,
 		reg_dst,
-		branch,
-		is_bne,
-		jump,
+		is_branch,
+		is_jalr,  
+		is_jalx,
+		mem_read,
 		mem2reg,
 		mem_wr,
 		alu_src,

@@ -4,44 +4,49 @@ use ieee.numeric_std.all;
 use work.riscv_pkg.all; 
 -------------------------------------------------------------------------
 entity fetch_stage is 
-	port (clk : in std_logic; 
-		fetch_sel : in std_logic_vector(1 downto 0);
-		PC		  : in std_logic_vector(WORD_SIZE-1 downto 0);
-		branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0); 
-		reg_IF_ID : out std_logic_vector(95 downto 0));
+	port (clk 	 	: in std_logic; 
+		  PC_src 	: in std_logic;
+		  branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0); 
+		  reg_IF_ID : out std_logic_vector(63 downto 0));
 end fetch_stage;
 -------------------------------------------------------------------------
 architecture fetch_a of fetch_stage is 
 
-	-- ALIAS for reg_IF_ID: next_PC / Instruction / PC  
-	alias next_PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(95 downto 64);
-	alias ft_instruction_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(63 downto 32);
-	alias PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(31 downto 0); 
+	-- alias for reg_IF_ID: Instruction / PC  
+	alias PC_IF: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(31 downto 0);
+	alias instruction_IF: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(63 downto 32);
 	
 	-- PC / Instruction 
 	signal current_pc : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
-	signal ft_instruction : std_logic_vector(WORD_SIZE-1 downto 0);
+	signal instruction : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 
 	begin 
 
-		-- MuxPC
-		with fetch_sel select 
-			current_pc <= PC when "00",
-						  std_logic_vector(unsigned(PC) + 4) when "01",
-						  branch_PC when "10",
-				  		  ZERO32 when others;	
+		process (clk)
+		begin 
 
-		-- InsMem
+			-- MuxPC
+			if (clk'EVENT and clk='1') then
+				-- MuxPC
+				with PC_src select 
+					current_pc <= std_logic_vector(unsigned(current_pc) + 4) when '0',
+								  branch_PC when '1',
+						  		  ZERO32 when others;	
+			end if;
+
+		end process;
+
+		-- InstrMem
 		InstrMEM: memInstr 
-			generic map (WIDTH => WORD_SIZE,
-						 WADDR => WORD_SIZE) 
-			port map (ADDRESS  => current_pc,
-					  clk	=> clk,
-				      Q => ft_instruction);
+		generic map (WIDTH => WORD_SIZE,
+					 WADDR => WORD_SIZE) 
+		port map (ADDRESS  => current_pc,
+				  clk	=> clk,
+			      Q => instruction);
+
+		-- Output: Reg_IF_ID (PC + Instruction)
+		PC_IF <= current_pc;
+		instruction_IF <= instruction;
+
 		
-		-- Reg_IF_ID Aliases
-		next_PC_A <= std_logic_vector(unsigned(current_pc) + 4);
-		ft_instruction_A <= ft_instruction;
-		PC_A <= current_pc;
- 
 end fetch_a; 

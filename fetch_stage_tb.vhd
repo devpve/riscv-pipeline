@@ -9,24 +9,23 @@ end testbench_fetch;
 architecture tb_fetch of testbench_fetch is 
 
 	component fetch_stage is 
-		port (clk  : in std_logic;
-			fetch_sel : in std_logic_vector(1 downto 0);
-			PC 		  : in std_logic_vector(WORD_SIZE-1 downto 0);
-			branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0);
-			reg_IF_ID : out std_logic_vector(95 downto 0));
+		port (clk 	 	: in std_logic; 
+			  PC_src 	: in std_logic;
+			  branch_PC : in std_logic_vector(WORD_SIZE-1 downto 0); 
+			  reg_IF_ID : out std_logic_vector(63 downto 0));
 	end component;
 
 	signal clk_in 	: std_logic := '0';
-	signal fetch_sel_in : std_logic_vector(1 downto 0) := "00";
-	signal PC_in : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
+	signal PC_src_in : std_logic := '0';
 	signal branch_PC_in : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
-	signal reg_IF_ID_out : std_logic_vector(95 downto 0);
+	signal reg_IF_ID_out : std_logic_vector(63 downto 0);
+
+	signal current_pc : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 
 	begin 
 		DUT : fetch_stage
 			port map(clk => clk_in,
-					fetch_sel => fetch_sel_in,
-					PC => PC_in, 
+					PC_src => PC_src_in,
 					branch_PC => branch_PC_in, 
 					reg_IF_ID => reg_IF_ID_out);
 
@@ -34,9 +33,9 @@ architecture tb_fetch of testbench_fetch is
 	begin
 	for i in 0 to 800 loop
 	clk_in <= '0';
-	wait for 2 ps;
+	wait for 1 ns;
 	clk_in <= '1';
-	wait for 2 ps;
+	wait for 1 ns;
 
 	end loop;
 	wait;
@@ -44,30 +43,23 @@ architecture tb_fetch of testbench_fetch is
  
 	stim_proc: process
 	begin
-		
+		 
 		-- TEST PC
 		-- Instruction is the same value as the address 
-		fetch_sel_in <= "00";
-		for i in 0 to 15 loop
-			PC_in <= std_logic_vector(to_unsigned(i, 32));
-			wait for 5 ps;
-			assert(reg_IF_ID_out = std_logic_vector(unsigned(PC_in) + 4) & PC_in & PC_in) report "PC Fail to Read" severity error;
-		end loop;
+		wait for 0.5 ns;
+		assert(reg_IF_ID_out = X"00000000" & X"00000000") report "Fetch: PC Zero fail" severity error;
+		wait for 2 ns;
+		assert(reg_IF_ID_out = X"00000004" & X"00000004") report "Fetch: PC 4 fail" severity error;
+		wait for 2 ns;
+		assert(reg_IF_ID_out = X"00000008" & X"00000008") report "Fetch: PC 8 fail" severity error;
+		wait for 2 ns;
 		
-		-- TEST NEXT_PC_VALUE
-		fetch_sel_in <= "01"; 
-		PC_in <= std_logic_vector(to_unsigned(5, 32));
-		wait for 5 ps;
-		assert(reg_IF_ID_out = std_logic_vector(unsigned(PC_in) + 8) & std_logic_vector(unsigned(PC_in) + 4) & std_logic_vector(unsigned(PC_in) + 4)) report "Next PC Fail" severity error;
-
-		wait for 20 ps;
-
-		fetch_sel_in <= "10";
+		PC_src_in <= '1';
 		branch_PC_in <= std_logic_vector(to_unsigned(8, 32));
-		wait for 5 ps;
-		assert(reg_IF_ID_out = std_logic_vector(unsigned(branch_PC_in) + 4) & branch_PC_in & branch_PC_in) report "Branch PC Fail" severity error;
+		wait for 2 ns;
+		assert(reg_IF_ID_out = branch_PC_in & branch_PC_in) report "Fetch: Branch PC Fail" severity error;
 		
-		wait for 20 ps;
+		wait for 20 ns;
 	wait;
 	end process;
 end tb_fetch; 

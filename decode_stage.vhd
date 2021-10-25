@@ -20,7 +20,7 @@ architecture decode_a of decode_stage is
 	alias next_PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(95 downto 64);
 	alias ft_instruction_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(63 downto 32);
 	alias PC_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_IF_ID(31 downto 0); 
-
+	-- ALIAS for opcode of instruction
 	alias ocpode_A: std_logic_vector(6 downto 0) is ft_instruction_A(6 downto 0);
 
 	alias PC_ID_A: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(31 downto 0); 
