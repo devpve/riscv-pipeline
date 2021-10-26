@@ -37,7 +37,7 @@ package riscv_pkg is
 	constant iOR3			: std_logic_vector(2 downto 0) := "110";
 	constant iSLTI3			: std_logic_vector(2 downto 0) := "010";
 	constant iAND3			: std_logic_vector(2 downto 0) := "111";
-	constant iSLTIU3		: std_logic_vector(2 downto 0) := "001";
+	constant iSLTIU3		: std_logic_vector(2 downto 0) := "011"; -- 001? bug
 	constant iSR3			: std_logic_vector(2 downto 0) := "101";
 	constant iBEQ3			: std_logic_vector(2 downto 0) := "000";
 	constant iBNE3			: std_logic_vector(2 downto 0) := "001";
@@ -98,6 +98,15 @@ package riscv_pkg is
 		);
 	end component;
 
+	component decode_stage is 
+		port (clk 		: in std_logic;
+		  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
+		  f_breg_wr : in std_logic;
+		  wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
+		  reg_IF_ID : in std_logic_vector(63 downto 0);
+		  reg_ID_EX : out std_logic_vector(179 downto 0)
+		);
+	end component;
 	
 	component reg is
 	generic (
@@ -159,7 +168,7 @@ package riscv_pkg is
 		ADDR : natural := BREG_IDX
 	);
 	port 
-	(	rst 	: in  std_logic;
+	(	
 		clk		: in  std_logic;
 		wren  	: in  std_logic;
 		rs1		: in  std_logic_vector(ADDR-1 downto 0);
@@ -175,7 +184,7 @@ package riscv_pkg is
 	
 	component alu_ctr is
 	port (
-		op_alu		: in std_logic_vector(1 downto 0);
+		alu_op		: in std_logic_vector(1 downto 0);
 		funct3		: in std_logic_vector(2 downto 0);
 		funct7		: in std_logic;
 		alu_ctr	   : out std_logic_vector(3 downto 0)
@@ -186,19 +195,18 @@ package riscv_pkg is
 
 	component control is
 	port (
-		clk  : in std_logic;
-		opcode : in std_logic_vector(5 downto 0);
-		op_ula :	out std_logic_vector(1 downto 0);
+		clk  		: in std_logic;
+		instruction	: in std_logic_vector(WORD_SIZE-1 downto 0);
+		alu_op 		: out std_logic_vector(1 downto 0);
 		pc_src,
-		reg_dst,
 		is_branch,
 		is_jalr,  
 		is_jalx,
-		mem_read,
-		mem2reg,
 		mem_wr,
+		mem_rd,
+		mem2reg,
 		alu_src,
-		breg_wr:	out std_logic
+		breg_wr 	: out std_logic
 		);
 	end component;
 

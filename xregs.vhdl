@@ -12,7 +12,7 @@ entity xreg is
 		ADDR : natural := BREG_IDX
 	);
 	port 
-	(	rst     : in  std_logic;
+	(	
 		clk		: in  std_logic;
 		wren  	: in  std_logic;
 		rs1		: in  std_logic_vector(ADDR-1 downto 0);
@@ -28,18 +28,11 @@ architecture xreg_a of xreg is
 	type vector_array is array (WORD_SIZE-1 downto 0) of
 		std_logic_vector (WORD_SIZE-1 downto 0);
 
-	signal regs : vector_array;
+	signal regs : vector_array := (OTHERS => (OTHERS => '1'));
 	-- rst é async ou sync?
 begin
-	process(rst, clk, wren)
+	process(clk, wren)
 	begin 
-
-		---- reset all regs to zero
-		if (rst = '1') then 
-			for k in 0 to WORD_SIZE-1 loop
-				regs(k) <= (OTHERS => '0');
-			end loop;
-		end if; 
 
 		-- write enable
 		if (clk'EVENT and clk='1') then

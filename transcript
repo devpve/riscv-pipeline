@@ -1,57 +1,3 @@
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 3 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of fetch_stage.vhd failed with 6 errors.
-# Compile of fetch_stage.vhd failed with 2 errors.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of fetch_stage.vhd was successful.
-# Compile of fetch_stage_tb.vhd failed with 2 errors.
-# Compile of fetch_stage_tb.vhd failed with 1 errors.
-# Compile of fetch_stage_tb.vhd failed with 1 errors.
-# Compile of fetch_stage_tb.vhd failed with 1 errors.
-# Compile of fetch_stage_tb.vhd was successful.
-vsim -gui work.testbench_fetch(tb_fetch)
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 14:47:05 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# ** Error: (vsim-13) Recompile work.meminstr because work.riscv_pkg has changed.
-# ** Error (suppressible): (vsim-12) Recompile work.meminstr(rtl) after work.meminstr is recompiled.
-# ** Error: (vsim-13) Recompile work.meminstr(rtl) because work.riscv_pkg has changed.
-# Load interrupted
-# Error loading design
-# End time: 14:47:05 on Oct 25,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 18
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of fetch_stage.vhd was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-vsim -gui work.testbench_fetch(tb_fetch)
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 14:47:47 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
 # Compile of fetch_stage.vhd was successful.
 # Compile of riscv_pkg.vhd was successful.
 # Compile of memInstr.vhdl was successful.
@@ -63,659 +9,25 @@ run -all
 # Compile of xregs.vhdl was successful.
 # Compile of xregs_tb.vhdl was successful.
 # Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 14:52:17 on Oct 25,2021, Elapsed time: 0:04:30
-# Errors: 0, Warnings: 8
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 14:52:17 on Oct 25,2021
+# Compile of control.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.testbench_decode(tb_decode)
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 11:54:04 on Oct 26,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd failed with 1 errors.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 1 failed with 1 error.
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 14:58:38 on Oct 25,2021, Elapsed time: 0:06:21
-# Errors: 0, Warnings: 4
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 14:58:39 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 5 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 10 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 15 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 20 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:00:37 on Oct 25,2021, Elapsed time: 0:01:58
-# Errors: 5, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:00:37 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 1 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:01:38 on Oct 25,2021, Elapsed time: 0:01:01
-# Errors: 5, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:01:38 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 8 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 10 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage_tb.vhd was successful.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:04:44 on Oct 25,2021, Elapsed time: 0:03:06
-# Errors: 4, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:04:44 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 5 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 7 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 9 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 16 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:22:50 on Oct 25,2021, Elapsed time: 0:18:06
-# Errors: 5, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:22:50 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 8 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:23:57 on Oct 25,2021, Elapsed time: 0:01:07
-# Errors: 5, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:23:57 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 8 ns  Iteration: 0  Instance: /testbench_fetch
-run -all
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:26:17 on Oct 25,2021, Elapsed time: 0:02:20
-# Errors: 5, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:26:17 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Branch PC Fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:27:27 on Oct 25,2021, Elapsed time: 0:01:10
-# Errors: 2, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:27:27 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 1 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 7 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd failed with 1 errors.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 1 failed with 1 error.
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:32:31 on Oct 25,2021, Elapsed time: 0:05:04
-# Errors: 6, Warnings: 4
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:32:31 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 9 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 12 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 17 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:33:52 on Oct 25,2021, Elapsed time: 0:01:21
-# Errors: 6, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:33:52 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 9 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 12 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 17 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:36:01 on Oct 25,2021, Elapsed time: 0:02:09
-# Errors: 6, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:36:01 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-# **** Error: LoadCompleteQ cmd: namespace inscope ::vsimwidgets::ViewMaster {::.view_master UpdateLoadComplete} sim
-# ****        invalid command name ""
-# invalid command name ""
-#     while executing
-# "$sci margin configure linenumbers -clickcommand [::itcl::code $this MarginClickedCB]"
-#     (method "::vsimwidgets::Srcobj::InitializeForDebug" body line 10)
-#     invoked from within
-# "InitializeForDebug"
-#     (method "::vsimwidgets::Srcobj::SourceUpdateLoadComplete" body line 49)
-#     invoked from within
-# "$srcedit SourceUpdateLoadComplete"
-#     (object "::.view_master" method "::vsimwidgets::ViewMaster::UpdateLoadComplete" body line 7)
-#     invoked from within
-# "::.view_master UpdateLoadComplete sim"
-#     (in namespace inscope "::vsimwidgets::ViewMaster" script line 1)
-#     invoked from within
-# "namespace inscope ::vsimwidgets::ViewMaster {::.view_master UpdateLoadComplete} sim"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval $p $tankNamespace "
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 9 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 12 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 17 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:37:37 on Oct 25,2021, Elapsed time: 0:01:36
-# Errors: 6, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:37:37 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 9 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 12 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 17 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:39:16 on Oct 25,2021, Elapsed time: 0:01:39
-# Errors: 6, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:39:16 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 8 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 12 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:43:52 on Oct 25,2021, Elapsed time: 0:04:36
-# Errors: 6, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:43:52 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run -all
-# ** Error: Fetch: Next PC Fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: Next PC Fail
-#    Time: 1 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Next PC Fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 6 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd failed with 6 errors.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 1 failed with 6 errors.
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:47:33 on Oct 25,2021, Elapsed time: 0:03:41
-# Errors: 6, Warnings: 4
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:47:34 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
+# Loading work.testbench_decode(tb_decode)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/DUT/*
 run
-# ** Error: Fetch: PC Zero fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: PC 4 fail
-#    Time: 1500 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: PC 8 fail
-#    Time: 3 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: Branch PC Fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
+# ** Error: regs(1) Fail to Read
+#    Time: 41 ps  Iteration: 0  Instance: /testbench_decode
 # Compile of fetch_stage.vhd was successful.
 # Compile of riscv_pkg.vhd was successful.
 # Compile of memInstr.vhdl was successful.
@@ -727,121 +39,31 @@ run
 # Compile of xregs.vhdl was successful.
 # Compile of xregs_tb.vhdl was successful.
 # Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:51:13 on Oct 25,2021, Elapsed time: 0:03:39
-# Errors: 4, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:51:13 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run
-# ** Error: Fetch: PC Zero fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: PC 4 fail
-#    Time: 2 ns  Iteration: 0  Instance: /testbench_fetch
-# ** Error: Fetch: PC 8 fail
-#    Time: 4 ns  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:53:58 on Oct 25,2021, Elapsed time: 0:02:45
-# Errors: 3, Warnings: 2
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:53:58 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run
-# ** Error: Fetch: PC Zero fail
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:56:02 on Oct 25,2021, Elapsed time: 0:02:04
-# Errors: 1, Warnings: 4
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:56:02 on Oct 25,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
-# ** Error: Fetch: PC 8 fail
-#    Time: 5500 ps  Iteration: 0  Instance: /testbench_fetch
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:57:28 on Oct 25,2021, Elapsed time: 0:01:26
+# Compile of control.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 11:55:31 on Oct 26,2021, Elapsed time: 0:01:27
 # Errors: 1, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:57:29 on Oct 25,2021
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 11:55:31 on Oct 26,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
+# Loading work.testbench_decode(tb_decode)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/DUT/*
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Error: regs(1) Fail to Read
+#    Time: 41 ps  Iteration: 0  Instance: /testbench_decode
 # Compile of fetch_stage.vhd was successful.
 # Compile of riscv_pkg.vhd was successful.
 # Compile of memInstr.vhdl was successful.
@@ -853,21 +75,126 @@ run
 # Compile of xregs.vhdl was successful.
 # Compile of xregs_tb.vhdl was successful.
 # Compile of decode_stage_tb.vhd was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.testbench_fetch(tb_fetch)
-# End time: 15:58:40 on Oct 25,2021, Elapsed time: 0:01:11
-# Errors: 0, Warnings: 3
-# vsim -gui work.testbench_fetch(tb_fetch) 
-# Start time: 15:58:40 on Oct 25,2021
+# Compile of control.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 11:59:14 on Oct 26,2021, Elapsed time: 0:03:43
+# Errors: 1, Warnings: 4
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 11:59:14 on Oct 26,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.riscv_pkg(body)
-# Loading work.testbench_fetch(tb_fetch)
-# Loading work.fetch_stage(fetch_a)
-# Loading work.meminstr(rtl)
-add wave -position end sim:/testbench_fetch/DUT/*
+# Loading work.testbench_decode(tb_decode)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# A time value could not be extracted from the current line
+add wave -position end sim:/testbench_decode/DUT/*
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd failed with 2 errors.
+# Compile of control.vhd was successful.
+# 12 compiles, 1 failed with 2 errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 14:27:02 on Oct 26,2021, Elapsed time: 2:27:48
+# Errors: 0, Warnings: 5
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 14:27:02 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# A time value could not be extracted from the current line
+add wave -position end sim:/testbench_decode/DUT/*
+# (vish-4014) No objects found matching 'sim:/testbench_decode/DUT/*'.
+add wave -position end sim:/testbench_decode/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Error: #6: Immediate Fail
+#    Time: 42 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd failed with 1 errors.
+# Compile of control.vhd was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 14:28:54 on Oct 26,2021, Elapsed time: 0:01:52
+# Errors: 1, Warnings: 5
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 14:28:54 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
