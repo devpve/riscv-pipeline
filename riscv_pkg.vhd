@@ -107,6 +107,14 @@ package riscv_pkg is
 		  reg_ID_EX : out std_logic_vector(179 downto 0)
 		);
 	end component;
+
+	component execute_stage is 
+		port (clk 		: in std_logic;
+			  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
+			  reg_ID_EX : in std_logic_vector(179 downto 0);
+			  pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
+			  reg_EX_MEM : out std_logic_vector(72 downto 0));
+	end component;
 	
 	component reg is
 	generic (
@@ -153,11 +161,11 @@ package riscv_pkg is
 			Q 			: out STD_LOGIC_VECTOR(WIDTH-1 downto 0));
 	end component;
 
-	component ula is
+	component alu is
 	port (
-		aluctl: 	in  std_logic_vector(3 downto 0);
+		opcode: 	in  std_logic_vector(3 downto 0);
 		A, B:		in  std_logic_vector(WORD_SIZE-1 downto 0);
-		aluout:	out std_logic_vector(WORD_SIZE-1 downto 0);
+		aluout:		out std_logic_vector(WORD_SIZE-1 downto 0);
 		zero:		out std_logic
 		);
 	end component;
@@ -184,6 +192,7 @@ package riscv_pkg is
 	
 	component alu_ctr is
 	port (
+		clk 		: in std_logic;
 		alu_op		: in std_logic_vector(1 downto 0);
 		funct3		: in std_logic_vector(2 downto 0);
 		funct7		: in std_logic;

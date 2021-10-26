@@ -198,3 +198,340 @@ run
 #    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1 ps  Iteration: 1  Instance: /testbench_decode/DUT/regBank
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl failed with 3 errors.
+# Compile of alu_control.vhd failed with 2 errors.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd failed with 2 errors.
+# 16 compiles, 3 failed with 7 errors.
+# Compile of alu.vhdl was successful.
+# Compile of alu_control.vhd failed with 2 errors.
+# Compile of alu_control.vhd failed with 2 errors.
+# Compile of alu_control.vhd failed with 2 errors.
+# Compile of alu_control.vhd was successful with warnings.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_control.vhd was successful with warnings.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd failed with 2 errors.
+# 16 compiles, 1 failed with 2 errors.
+# Compile of alu_control.vhd was successful with warnings.
+# Compile of execute_stage.vhd failed with 21 errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd failed with 20 errors.
+# 15 compiles, 2 failed with 20 errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd failed with 20 errors.
+# Compile of alu_ctr.vhd was successful with warnings.
+# 16 compiles, 1 failed with 20 errors.
+# Compile of execute_stage.vhd failed with 20 errors.
+# Compile of execute_stage.vhd failed with 18 errors.
+# Compile of execute_stage.vhd failed with 21 errors.
+# Compile of execute_stage.vhd failed with 21 errors.
+# Compile of execute_stage.vhd failed with 20 errors.
+# Compile of execute_stage.vhd failed with 17 errors.
+# Compile of execute_stage.vhd failed with 8 errors.
+# Compile of execute_stage.vhd failed with 3 errors.
+# Compile of execute_stage.vhd failed with 2 errors.
+# Compile of execute_stage.vhd failed with 3 errors.
+# Compile of execute_stage.vhd failed with 3 errors.
+# Compile of execute_stage.vhd failed with 2 errors.
+# Compile of execute_stage.vhd failed with 1 errors.
+# Compile of execute_stage.vhd failed with 1 errors.
+# Compile of execute_stage.vhd was successful with warnings.
+# Compile of execute_stage.vhd failed with 1 errors.
+# Compile of execute_stage.vhd was successful.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful with warnings.
+# Compile of execute_stage_tb.vhd failed with 17 errors.
+# 17 compiles, 1 failed with 17 errors.
+# Compile of execute_stage_tb.vhd failed with 1 errors.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 16:55:52 on Oct 26,2021, Elapsed time: 2:26:58
+# Errors: 0, Warnings: 40
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 16:55:52 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+# ** Warning: (vsim-8683) Uninitialized out port /testbench_execute/EXECUTE/alu_ex/zero has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end sim:/testbench_execute/DECODE/*
+add wave -position end sim:/testbench_execute/EXECUTE/*
+run
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful with warnings.
+# Compile of execute_stage_tb.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+# Break key hit
+# Break in Process line__21 at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd line 72
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 16:59:06 on Oct 26,2021, Elapsed time: 0:03:14
+# Errors: 0, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 16:59:06 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/DECODE/*
+add wave -position 4 sim:/testbench_execute/EXECUTE/*
+run
+# Break key hit
+# Break in Process line__21 at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd line 72
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful with warnings.
+# Compile of execute_stage_tb.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 17:02:19 on Oct 26,2021, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 17:02:19 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/DECODE/*
+add wave -position 2 sim:/testbench_execute/EXECUTE/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Error: #1: BREG WRITE Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute
+# ** Error: #1: ALU RESULT Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 17:06:16 on Oct 26,2021, Elapsed time: 0:03:57
+# Errors: 2, Warnings: 4
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 17:06:16 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/DECODE/*
+add wave -position end sim:/testbench_execute/EXECUTE/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Error: #1: BREG WRITE Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute
+# ** Error: #1: ALU RESULT Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 17:12:36 on Oct 26,2021, Elapsed time: 0:06:20
+# Errors: 2, Warnings: 4
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 17:12:37 on Oct 26,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/DECODE/*
+add wave -position end sim:/testbench_execute/EXECUTE/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 ps  Iteration: 1  Instance: /testbench_execute/DECODE/regBank
+# ** Error: #1: BREG WRITE Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute
+# ** Error: #1: ALU RESULT Fail
+#    Time: 7 ps  Iteration: 0  Instance: /testbench_execute

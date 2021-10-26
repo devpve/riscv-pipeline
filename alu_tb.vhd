@@ -1,21 +1,20 @@
-
 ------------------------------------------------------------
--- ULA TESTBENCH
+-- ALU TESTBENCH
 ------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.riscv_pkg.all; 
 ------------------------------------------------------------
-entity ula_tb is 
-end ula_tb; 
+entity alu_tb is 
+end alu_tb; 
 ------------------------------------------------------------
-architecture tb_arch of ula_tb is 
-	component ulaRV IS
-		generic (WSIZE: natural := 32);
-		port ( opcode	: in std_logic_vector(3 downto 0);
-				A, B 	: in std_logic_vector(WSIZE-1 downto 0);
-				Z 		: out std_logic_vector(WSIZE-1 downto 0);
-				zero	: out std_logic);
+architecture tb_arch of alu_tb is 
+	component alu IS
+        port (opcode    : in std_logic_vector(3 downto 0);
+            A, B    : in std_logic_vector(WORD_SIZE-1 downto 0);
+            aluout  : out std_logic_vector(WORD_SIZE-1 downto 0);
+            zero    : out std_logic);
   	end component;
 	
 	constant word : natural := 32;
@@ -26,12 +25,11 @@ architecture tb_arch of ula_tb is
 
 begin 
 
-	DUT: ulaRV  
-          generic map (WSIZE => word)
+	DUT: alu  
           port map(opcode => opcode_in,
           			A => A_in,
           			B => B_in,
-          			Z => Z_out,
+          			aluout => Z_out,
           			zero => zero_out);
 
     stim_proc: process
