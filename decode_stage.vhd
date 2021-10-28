@@ -5,8 +5,8 @@ use work.riscv_pkg.all;
 -------------------------------------------------------------------------
 entity decode_stage is 
 	port (clk 		: in std_logic;
-		  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 		  f_breg_wr : in std_logic;
+		  rd 		: in std_logic_vector(BREG_IDX-1 downto 0);
 		  wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
 		  reg_IF_ID : in std_logic_vector(63 downto 0);
 		  reg_ID_EX : out std_logic_vector(179 downto 0));
@@ -74,7 +74,7 @@ architecture decode_a of decode_stage is
 				wren => f_breg_wr,
 				rs1 => instruction_IF(19 downto 15),
 				rs2	=> instruction_IF(24 downto 20),
-				rd => instruction_IF(11 downto 7),
+				rd => rd,
 				data_in	=> wb_rd,
 				A => rd1,
 				B => rd2

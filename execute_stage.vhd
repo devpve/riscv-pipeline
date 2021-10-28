@@ -5,7 +5,6 @@ use work.riscv_pkg.all;
 -------------------------------------------------------------------------
 entity execute_stage is 
 	port (clk 		: in std_logic;
-		  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 		  reg_ID_EX : in std_logic_vector(179 downto 0);
 		  pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
 		  reg_EX_MEM : out std_logic_vector(72 downto 0));

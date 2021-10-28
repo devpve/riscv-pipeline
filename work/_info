@@ -10,12 +10,12 @@ z2
 cModel Technology
 dC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI
 Ealu
-Z0 w1635278295
-Z1 DPx4 work 9 riscv_pkg 0 22 Ha7XIW31PGCVgieFe:;f?2
+Z0 w1635340145
+Z1 DPx4 work 9 riscv_pkg 0 22 YnTbZH1^1hkY2fTd<`Pe]2
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1470
+!i122 1615
 Z5 dC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline
 Z6 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu.vhdl
 Z7 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu.vhdl
@@ -25,9 +25,9 @@ Ve=J[cFg7I9h7H5@zC6eU20
 !s100 `RWOi96C6RVeU=NlRe9o<1
 Z8 OV;C;2020.1;71
 33
-Z9 !s110 1635279145
+Z9 !s110 1635457397
 !i10b 1
-Z10 !s108 1635279144.000000
+Z10 !s108 1635457396.000000
 Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu.vhdl|
 Z12 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu.vhdl|
 !i113 1
@@ -39,11 +39,11 @@ R2
 R3
 R4
 DEx4 work 3 alu 0 22 e=J[cFg7I9h7H5@zC6eU20
-!i122 1470
+!i122 1615
 l26
-L16 32
-Vl3P55VLdI]HjRZ_9;z`e03
-!s100 NLjiWa0@`dVRM?^Ho6T@T1
+L16 34
+Vo=g6mXSmC7Wmb06k6gNXb0
+!s100 <hBcJ[c]>`P?a`m4JSoHz3
 R8
 33
 R9
@@ -55,12 +55,12 @@ R12
 R13
 R14
 Ealu_ctr
-Z15 w1635278723
+Z15 w1635340118
 R1
 R2
 R3
 R4
-!i122 1473
+!i122 1618
 R5
 Z16 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd
 Z17 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd
@@ -70,9 +70,9 @@ VHi7X95^3[Lbd3MgWeX?b`3
 !s100 5mm;naIRmfS2e=9<nACe[2
 R8
 32
-Z18 !s110 1635279146
+Z18 !s110 1635457398
 !i10b 1
-Z19 !s108 1635279146.000000
+Z19 !s108 1635457398.000000
 Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd|
 Z21 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_ctr.vhd|
 !i113 1
@@ -84,11 +84,11 @@ R2
 R3
 R4
 DEx4 work 7 alu_ctr 0 22 Hi7X95^3[Lbd3MgWeX?b`3
-!i122 1473
+!i122 1618
 l20
-L16 63
-VFBWe>m`HNJSMV>kS[nfPY0
-!s100 jLWT77>6V?iUa4kJ8@<AX2
+L16 61
+Vh]Zn9U4NnQOK0bb;]cg@n2
+!s100 @zbLTk[le5A4Kb4mEMKc51
 R8
 32
 R18
@@ -105,7 +105,7 @@ R1
 R2
 R3
 R4
-!i122 1471
+!i122 1616
 R5
 Z24 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_tb.vhd
 Z25 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_tb.vhd
@@ -117,7 +117,7 @@ R8
 32
 R9
 !i10b 1
-Z26 !s108 1635279145.000000
+Z26 !s108 1635457397.000000
 Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_tb.vhd|
 Z28 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/alu_tb.vhd|
 !i113 1
@@ -129,7 +129,7 @@ R2
 R3
 R4
 DEx4 work 6 alu_tb 0 22 lNkE]XW;5G>IAK3PLU;:F2
-!i122 1471
+!i122 1616
 l26
 L12 188
 V_bX6a2iom>Fcj]T>15OQW0
@@ -150,7 +150,7 @@ R1
 R2
 R3
 R4
-!i122 1469
+!i122 1614
 R5
 Z30 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/control.vhd
 Z31 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/control.vhd
@@ -160,7 +160,7 @@ VaQn8:S1ImW^jWlm00U:NG3
 !s100 Q;cH2X2eZRJfK;?fn5;D43
 R8
 32
-Z32 !s110 1635279144
+Z32 !s110 1635457396
 !i10b 1
 R10
 Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/control.vhd|
@@ -174,7 +174,7 @@ R2
 R3
 R4
 DEx4 work 7 control 0 22 aQn8:S1ImW^jWlm00U:NG3
-!i122 1469
+!i122 1614
 l28
 L23 128
 VJ?lmkk]o433X249>;c9ge2
@@ -190,24 +190,24 @@ R34
 R22
 R14
 Edecode_stage
-Z35 w1635259458
+Z35 w1635456915
 R1
 R2
 R3
 R4
-!i122 1463
+!i122 1608
 R5
 Z36 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd
 Z37 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd
 l0
 L6 1
-VPhM[HJm^C>7KIVOma;?dH2
-!s100 <72l7X2f>^d3Eh_7P`>nE2
+V]Y>c5<Kb_aDF]T>AS][Gb3
+!s100 C25;2TO6mEB^?ER`0dfJQ2
 R8
 32
-Z38 !s110 1635279141
+Z38 !s110 1635457393
 !i10b 1
-Z39 !s108 1635279141.000000
+Z39 !s108 1635457393.000000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd|
 Z41 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd|
 !i113 1
@@ -218,12 +218,12 @@ R1
 R2
 R3
 R4
-DEx4 work 12 decode_stage 0 22 PhM[HJm^C>7KIVOma;?dH2
-!i122 1463
+DEx4 work 12 decode_stage 0 22 ]Y>c5<Kb_aDF]T>AS][Gb3
+!i122 1608
 l48
 L15 82
-V>]^`GXK<HbJIEZl]lfe_Q2
-!s100 f;DKkdH=;^O>zcHAgzDGS3
+V@EXVF[6A_V9ZUQenC]Gc61
+!s100 e1A6HbShC8l32AeRjVea13
 R8
 32
 R38
@@ -235,19 +235,19 @@ R41
 R22
 R14
 Eexecute_stage
-Z42 w1635278669
+Z42 w1635457121
 R1
 R2
 R3
 R4
-!i122 1472
+!i122 1617
 R5
 Z43 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage.vhd
 Z44 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage.vhd
 l0
 L6 1
-VXk4kjbDW;EjoG8cMYK_493
-!s100 6>]1Y7Z=0GIP6QbdZjQ<l3
+VJMK9Ycg0j2Z8Vba^[J:^22
+!s100 GPiR1VfRSJ=>1PI`Y00GQ3
 R8
 32
 R18
@@ -263,12 +263,12 @@ R1
 R2
 R3
 R4
-DEx4 work 13 execute_stage 0 22 Xk4kjbDW;EjoG8cMYK_493
-!i122 1472
-l55
-L14 99
-V@8W;?QiY`@anKfc6[5niE1
-!s100 n6Ed8o6gWcj3UXLTR@MK21
+DEx4 work 13 execute_stage 0 22 JMK9Ycg0j2Z8Vba^[J:^22
+!i122 1617
+l54
+L13 99
+VQhi7DfF]f7aAL<i`o?c>20
+!s100 7K8UM=I4YmgXDPLU4_bEm2
 R8
 32
 R18
@@ -281,70 +281,70 @@ R22
 R14
 Efetch_stage
 Z47 w1635187032
-R1
+Z48 DPx4 work 9 riscv_pkg 0 22 QdIEE7<jG1Jkff`D3aK3c2
 R2
 R3
 R4
-!i122 1458
+!i122 1603
 R5
-Z48 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd
-Z49 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd
+Z49 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd
+Z50 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd
 l0
 L6 1
 Vj_cQNc_N3o<em9BlbKk:^2
 !s100 [EU6[5RDfn0dMek?D8[Pb1
 R8
 33
-Z50 !s110 1635279139
+Z51 !s110 1635457391
 !i10b 1
-Z51 !s108 1635279139.000000
-Z52 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd|
-Z53 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd|
+Z52 !s108 1635457390.000000
+Z53 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd|
+Z54 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage.vhd|
 !i113 1
 R13
 R14
 Afetch_a
-R1
+R48
 R2
 R3
 R4
 DEx4 work 11 fetch_stage 0 22 j_cQNc_N3o<em9BlbKk:^2
-!i122 1458
+!i122 1603
 l23
 L13 40
 VA?fmJoNES0;bba9AH12JY1
 !s100 ]Y_B7SVc3h83SzAjLD9j33
 R8
 33
-R50
-!i10b 1
 R51
+!i10b 1
 R52
 R53
+R54
 !i113 1
 R13
 R14
 Egenimm32
-Z54 w1634933588
+Z55 w1634933588
 R1
 R2
 R3
 R4
-!i122 1464
+!i122 1609
 R5
-Z55 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd
-Z56 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd
+Z56 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd
+Z57 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd
 l0
 L6 1
 VjFd?EY2TVVI9VOiOB0Lfm1
 !s100 dISUA9QNf1B]Ec6HEo4981
 R8
 33
-Z57 !s110 1635279142
+Z58 !s110 1635457394
 !i10b 1
 R39
-Z58 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd|
-Z59 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd|
+Z59 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd|
+Z60 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/immediateGen.vhd|
 !i113 1
 R13
 R14
@@ -354,42 +354,87 @@ R2
 R3
 R4
 DEx4 work 8 genimm32 0 22 jFd?EY2TVVI9VOiOB0Lfm1
-!i122 1464
+!i122 1609
 l14
 L12 13
 VYgaRAS^zGG5VKNzKNcfgz3
 !s100 U3I82iTzE4dbo2P:a2lHX3
 R8
 33
-R57
+R58
 !i10b 1
 R39
-R58
 R59
+R60
 !i113 1
 R13
 R14
-Ememinstr
-Z60 w1635186998
+Ememdata
+Z61 w1635453822
 R1
 R2
 R3
 R4
-!i122 1460
+!i122 1620
 R5
-Z61 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
-Z62 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+Z62 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData.vhd
+Z63 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData.vhd
 l0
-Z63 L10 1
+Z64 L10 1
+VdM7OBI]4bM^WlogS_bY472
+!s100 7e4YfIg>_S?9`L^MdQffY1
+R8
+33
+Z65 !s110 1635457399
+!i10b 1
+Z66 !s108 1635457399.000000
+Z67 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData.vhd|
+Z68 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData.vhd|
+!i113 1
+R13
+R14
+Amemdata_a
+R1
+R2
+R3
+R4
+DEx4 work 7 memdata 0 22 dM7OBI]4bM^WlogS_bY472
+!i122 1620
+l47
+L26 37
+V6^;Dcz00TLC2nW0j2NmOb3
+!s100 EeYJH>A:LOjSRJ5N3iM6P0
+R8
+33
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 1
+R13
+R14
+Ememinstr
+Z69 w1635186998
+R1
+R2
+R3
+R4
+!i122 1605
+R5
+Z70 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+Z71 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+l0
+R64
 VPiHIDmjLUQzM8Z4SNY@Zj1
 !s100 iIaAH1l1a<1K:?ZYRbE0k2
 R8
 33
-Z64 !s110 1635279140
+Z72 !s110 1635457392
 !i10b 1
-Z65 !s108 1635279140.000000
-Z66 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl|
-Z67 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl|
+Z73 !s108 1635457391.000000
+Z74 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl|
+Z75 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl|
 !i113 1
 R13
 R14
@@ -399,41 +444,131 @@ R2
 R3
 R4
 DEx4 work 8 meminstr 0 22 PiHIDmjLUQzM8Z4SNY@Zj1
-!i122 1460
+!i122 1605
 l40
 L18 31
 VRKaKLhZL8kFbH]P4Q^Z>^1
 !s100 ]ULPIS3Lhnnd1aH2anGnf1
 R8
 33
-R64
+R72
 !i10b 1
-R65
-R66
-R67
+R73
+R74
+R75
 !i113 1
 R13
+R14
+Ememory_stage
+Z76 w1635455834
+R1
+R2
+R3
+R4
+!i122 1622
+R5
+Z77 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memory_stage.vhd
+Z78 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memory_stage.vhd
+l0
+L6 1
+Vk[>BLI3nNnXEKBmgaW61L0
+!s100 QG7m06]c`^N:U]6Czb6Co0
+R8
+32
+Z79 !s110 1635457400
+!i10b 1
+Z80 !s108 1635457400.000000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memory_stage.vhd|
+Z82 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memory_stage.vhd|
+!i113 1
+R22
+R14
+Amemory_a
+R1
+R2
+R3
+R4
+DEx4 work 12 memory_stage 0 22 k[>BLI3nNnXEKBmgaW61L0
+!i122 1622
+l31
+L12 39
+V?1ODmnMI47zL36@A2ITQl2
+!s100 ]UH6]cfA<Ag:W`jS_I8@Q0
+R8
+32
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 1
+R22
+R14
+Eriscv_pipeline
+Z83 w1635457374
+R1
+R2
+R3
+R4
+!i122 1624
+R5
+Z84 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pipeline.vhd
+Z85 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pipeline.vhd
+l0
+L6 1
+VSE_J70Q:nJUD3S>V<KBAZ0
+!s100 MDSKY>7J`3HnHo<HPlaGc2
+R8
+32
+Z86 !s110 1635457401
+!i10b 1
+Z87 !s108 1635457401.000000
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pipeline.vhd|
+Z89 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pipeline.vhd|
+!i113 1
+R22
+R14
+Ariscv_a
+R1
+R2
+R3
+R4
+DEx4 work 14 riscv_pipeline 0 22 SE_J70Q:nJUD3S>V<KBAZ0
+!i122 1624
+l24
+L13 56
+V6^`O_:9]dzG_FXgj4d1SD2
+!s100 bb4<8A@3Ze8UCK>^<5P?22
+R8
+32
+R86
+!i10b 1
+R87
+R88
+R89
+!i113 1
+R22
 R14
 Priscv_pkg
 R2
 R3
 R4
-!i122 1459
-Z68 w1635278743
+!i122 1604
+Z90 w1635457137
 R5
-Z69 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd
-Z70 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd
+Z91 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd
+Z92 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd
 l0
 L6 1
-VHa7XIW31PGCVgieFe:;f?2
-!s100 ;Vo7idEAZH6387`IiEiz<3
+VYnTbZH1^1hkY2fTd<`Pe]2
+!s100 m3jYZ0mT0P=aRb4HQ9]TR1
 R8
 33
-R50
-!i10b 1
 R51
-Z71 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd|
-Z72 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd|
+!i10b 1
+R73
+Z93 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd|
+Z94 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/riscv_pkg.vhd|
 !i113 1
 R13
 R14
@@ -442,42 +577,42 @@ R1
 R2
 R3
 R4
-!i122 1459
+!i122 1604
 l0
-L257 1
-V7TJaTR^^7fFz;;jJ9T4QS1
-!s100 _Qad[?EL?Lk?ia=054OWV3
+L233 1
+V_4j37:J=YIH_dn;DG=<k02
+!s100 L8Nh70lc^`<Q_1Rec>P7R0
 R8
 33
-R50
-!i10b 1
 R51
-R71
-R72
+!i10b 1
+R73
+R93
+R94
 !i113 1
 R13
 R14
 Etestbench
-Z73 w1634933992
+Z95 w1634933992
 R1
 R2
 R3
 R4
-!i122 1467
+!i122 1612
 R5
-Z74 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl
-Z75 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl
+Z96 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl
+Z97 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl
 l0
 L9 1
 VoN7lfTg`;2lKZF5e;;DaP3
 !s100 :ko^F?i:giGMYfNIn66NG2
 R8
 32
-Z76 !s110 1635279143
+Z98 !s110 1635457395
 !i10b 1
-Z77 !s108 1635279143.000000
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl|
-Z79 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl|
+Z99 !s108 1635457395.000000
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl|
+Z101 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs_tb.vhdl|
 !i113 1
 R22
 R14
@@ -487,42 +622,42 @@ R2
 R3
 R4
 DEx4 work 9 testbench 0 22 oN7lfTg`;2lKZF5e;;DaP3
-!i122 1467
+!i122 1612
 l36
 L12 85
 VHiEkHSRS;VX0]5jCB>9GO3
 !s100 X5X8;Rf8WjfGM8aH6zAiS2
 R8
 32
-R76
+R98
 !i10b 1
-R77
-R78
-R79
+R99
+R100
+R101
 !i113 1
 R22
 R14
 Etestbench_decode
-Z80 w1635269318
+Z102 w1635457419
 R1
 R2
 R3
 R4
-!i122 1468
+!i122 1625
 R5
-Z81 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd
-Z82 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd
+Z103 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd
+Z104 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd
 l0
 L6 1
 VmJR[hbMC>eVc^ooHOFGF71
 !s100 D<a9:7WVXZzSmC`MN;]m`0
 R8
 33
-R32
+Z105 !s110 1635457430
 !i10b 1
-R77
-Z83 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd|
-Z84 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd|
+Z106 !s108 1635457430.000000
+Z107 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd|
+Z108 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage_tb.vhd|
 !i113 1
 R13
 R14
@@ -531,43 +666,43 @@ R1
 R2
 R3
 R4
-DEx4 work 16 testbench_decode 0 22 mJR[hbMC>eVc^ooHOFGF71
-!i122 1468
-l53
-L9 183
-V:QM1UH`jo^VYAAn6M;8im2
-!s100 <Ec3``9P4md?Nfj3kTk^h1
+Z109 DEx4 work 16 testbench_decode 0 22 mJR[hbMC>eVc^ooHOFGF71
+!i122 1625
+l52
+L9 181
+VOBe;m[0l9kPNLl76A21ZO3
+!s100 NDEG7;H_eFMedh4KcaKz30
 R8
 33
-R32
+R105
 !i10b 1
-R77
-R83
-R84
+R106
+R107
+R108
 !i113 1
 R13
 R14
 Etestbench_execute
-Z85 w1635279135
+Z110 w1635279135
 R1
 R2
 R3
 R4
-!i122 1474
+!i122 1619
 R5
-Z86 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd
-Z87 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd
+Z111 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd
+Z112 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd
 l0
 L6 1
 V>IK3NkEP5AW4X1=YTM:]P3
 !s100 i5[Z3:;E4ZikRlLBYe<ZE2
 R8
 32
-Z88 !s110 1635279147
+R65
 !i10b 1
 R19
-Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd|
-Z90 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd|
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd|
+Z114 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/execute_stage_tb.vhd|
 !i113 1
 R22
 R14
@@ -576,32 +711,32 @@ R1
 R2
 R3
 R4
-Z91 DEx4 work 17 testbench_execute 0 22 >IK3NkEP5AW4X1=YTM:]P3
-!i122 1474
+DEx4 work 17 testbench_execute 0 22 >IK3NkEP5AW4X1=YTM:]P3
+!i122 1619
 l50
 L9 186
 V25SXc5^Zd6_kmaU1TmaE20
 !s100 T@g<Vi?:]4nd;@@kG`m_<3
 R8
 32
-R88
+R65
 !i10b 1
 R19
-R89
-R90
+R113
+R114
 !i113 1
 R22
 R14
 Etestbench_fetch
-Z92 w1635188289
+Z115 w1635188289
 R1
 R2
 R3
 R4
-!i122 1462
+!i122 1607
 R5
-Z93 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd
-Z94 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd
+Z116 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd
+Z117 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd
 l0
 L6 1
 Vg8G`4c;fn8_kZjc[99o:02
@@ -610,9 +745,9 @@ R8
 32
 R38
 !i10b 1
-R65
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd|
-Z96 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd|
+Z118 !s108 1635457392.000000
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd|
+Z120 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/fetch_stage_tb.vhd|
 !i113 1
 R22
 R14
@@ -622,7 +757,7 @@ R2
 R3
 R4
 DEx4 work 15 testbench_fetch 0 22 g8G`4c;fn8_kZjc[99o:02
-!i122 1462
+!i122 1607
 l25
 L9 57
 VY@@S1T1z?Kii1K:hUmmfX1
@@ -631,33 +766,33 @@ R8
 32
 R38
 !i10b 1
-R65
-R95
-R96
+R118
+R119
+R120
 !i113 1
 R22
 R14
 Etestbench_mem
-Z97 w1634664130
+Z121 w1634664130
 R1
 R2
 R3
 R4
-!i122 1461
+!i122 1606
 R5
-Z98 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl
-Z99 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl
+Z122 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl
+Z123 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl
 l0
-R63
+R64
 Vj^>;0bS7E<imLFmAolid33
 !s100 AUXa[^JBlAVUU5GC]=6iB1
 R8
 32
-R64
+R72
 !i10b 1
-R65
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl|
-Z101 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl|
+R118
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl|
+Z125 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr_tb.vhdl|
 !i113 1
 R22
 R14
@@ -667,42 +802,132 @@ R2
 R3
 R4
 DEx4 work 13 testbench_mem 0 22 j^>;0bS7E<imLFmAolid33
-!i122 1461
+!i122 1606
 l27
 L13 44
 VoDHk=OWfkMcYR5[G5K=OU3
 !s100 HNF1hz7mzfSOH^^6nWDgk1
 R8
 32
-R64
+R72
 !i10b 1
-R65
-R100
-R101
+R118
+R124
+R125
 !i113 1
 R22
 R14
-Exreg
-Z102 w1635268528
+Etestbench_memdata
+Z126 w1635454272
 R1
 R2
 R3
 R4
-!i122 1466
+!i122 1621
 R5
-Z103 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl
-Z104 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl
+Z127 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData_tb.vhd
+Z128 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData_tb.vhd
+l0
+R64
+VjCMgM9JW8iLhjDm@b3KC13
+!s100 CJg@KbW8Ln0k;[:e3>n>P1
+R8
+32
+R79
+!i10b 1
+R66
+Z129 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData_tb.vhd|
+Z130 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData_tb.vhd|
+!i113 1
+R22
+R14
+Atb_memdata
+R1
+R2
+R3
+R4
+DEx4 work 17 testbench_memdata 0 22 jCMgM9JW8iLhjDm@b3KC13
+!i122 1621
+l36
+L13 77
+V03O=dUzQ9CT?^NS2V__Cg0
+!s100 Y7DakAlkHd5GNEdn1Yc0_1
+R8
+32
+R79
+!i10b 1
+R66
+R129
+R130
+!i113 1
+R22
+R14
+Ewb_stage
+Z131 w1635456283
+R1
+R2
+R3
+R4
+!i122 1623
+R5
+Z132 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage.vhd
+Z133 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage.vhd
+l0
+L6 1
+VV8emB_@9b8ck<PGL8O<l50
+!s100 JMD7IVjJoO1DQ68[jFM_J2
+R8
+32
+R86
+!i10b 1
+R80
+Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage.vhd|
+Z135 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage.vhd|
+!i113 1
+R22
+R14
+Awb_a
+R1
+R2
+R3
+R4
+DEx4 work 8 wb_stage 0 22 V8emB_@9b8ck<PGL8O<l50
+!i122 1623
+l23
+L14 21
+VRaY0V<a81Nc8XQAP_M4?N1
+!s100 DDU9>WznZ;XXiD@KNXRzT1
+R8
+32
+R86
+!i10b 1
+R80
+R134
+R135
+!i113 1
+R22
+R14
+Exreg
+Z136 w1635268528
+R1
+R2
+R3
+R4
+!i122 1611
+R5
+Z137 8C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl
+Z138 FC:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl
 l0
 L9 1
 VTG:PK7i?_TbJG4]U59ldl3
 !s100 0lnFaI>z_EdI;cne^MjiZ1
 R8
 32
-R76
+R98
 !i10b 1
-Z105 !s108 1635279142.000000
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl|
-Z107 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl|
+Z139 !s108 1635457394.000000
+Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl|
+Z141 !s107 C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/xregs.vhdl|
 !i113 1
 R22
 R14
@@ -712,18 +937,18 @@ R2
 R3
 R4
 DEx4 work 4 xreg 0 22 TG:PK7i?_TbJG4]U59ldl3
-!i122 1466
+!i122 1611
 l33
 L27 24
 ViH8eSIHz_WJ^V8Xo6m[h<1
 !s100 UThaOK6B]o5IImXHFPE0^1
 R8
 32
-R76
+R98
 !i10b 1
-R105
-R106
-R107
+R139
+R140
+R141
 !i113 1
 R22
 R14

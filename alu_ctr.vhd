@@ -65,8 +65,6 @@ architecture alu_ctr_a of alu_ctr is
 					alu_control <= ULA_ADD;
 				when "10" => -- branch
 					alu_control <= ULA_SUB;
-				when "11" => -- default
-					alu_control <= "0000";
 				when others => 
 					alu_control <= "1111";
 			end case;

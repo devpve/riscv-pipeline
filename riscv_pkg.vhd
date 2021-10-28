@@ -92,70 +92,47 @@ package riscv_pkg is
 		port (
 			clk 	 	: in std_logic; 
 			PC_src 		: in std_logic;
-		    PC   		: in std_logic_vector(WORD_SIZE-1 downto 0);
 			branch_PC 	: in std_logic_vector(WORD_SIZE-1 downto 0); 
 			reg_IF_ID 	: out std_logic_vector(63 downto 0)
 		);
 	end component;
 
 	component decode_stage is 
-		port (clk 		: in std_logic;
-		  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
-		  f_breg_wr : in std_logic;
-		  wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
-		  reg_IF_ID : in std_logic_vector(63 downto 0);
-		  reg_ID_EX : out std_logic_vector(179 downto 0)
+		port (
+			clk 		: in std_logic;
+			f_breg_wr 	: in std_logic;
+			rd 			: in std_logic_vector(BREG_IDX-1 downto 0);
+			wb_rd 		: in std_logic_vector(WORD_SIZE-1 downto 0);
+			reg_IF_ID 	: in std_logic_vector(63 downto 0);
+			reg_ID_EX 	: out std_logic_vector(179 downto 0)
 		);
 	end component;
 
 	component execute_stage is 
 		port (clk 		: in std_logic;
-			  PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 			  reg_ID_EX : in std_logic_vector(179 downto 0);
 			  pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
 			  reg_EX_MEM : out std_logic_vector(72 downto 0));
 	end component;
-	
-	component reg is
-	generic (
-		SIZE : natural := 32
-	);
-	port 
-	(
-		clk		: in std_logic;
-		wren		: in std_logic;
-		rst		: in std_logic;
-		d_in	   : in std_logic_vector(WORD_SIZE-1 downto 0);
-		d_out	: out std_logic_vector(WORD_SIZE-1 downto 0)
-	);
-	end component; 
-	
-	component mux_2 is
-	generic (
-		SIZE : natural := 32
-	);
-	port (	
-		in0, in1	: in std_logic_vector(SIZE-1 downto 0);
-		sel		: in std_logic;
-		m_out		: out std_logic_vector(SIZE-1 downto 0)
-	);
+
+	component memory_stage is 
+		port (clk 			: in std_logic;
+			  reg_EX_MEM 	: in std_logic_vector(72 downto 0);
+			  reg_MEM_WB 	: out std_logic_vector(70 downto 0));
 	end component;
 
-	component adder is
-	generic (
-		DATA_WIDTH : natural := WORD_SIZE
-	);
-	port (
-		a	 : in std_logic_vector ((DATA_WIDTH-1) downto 0);
-		b	 : in std_logic_vector ((DATA_WIDTH-1) downto 0);
-		res : out std_logic_vector ((DATA_WIDTH-1) downto 0)
-	);
+	component wb_stage is 
+		port (clk 			: in std_logic;
+			  reg_MEM_WB 	: in std_logic_vector(70 downto 0);
+			  f_breg_wr 	: out std_logic;
+			  rd 			: out std_logic_vector(BREG_IDX-1 downto 0);
+			  wb_rd			: out std_logic_vector(WORD_SIZE-1 downto 0));
 	end component;
-	
+
 	component memInstr is
 	generic (
 		WIDTH : natural := WORD_SIZE;
-		WADDR : natural := 8);
+		WADDR : natural := WORD_SIZE);
 	port (ADDRESS  : in STD_LOGIC_VECTOR (WADDR-1 downto 0);
 			clk		: in std_logic;
 			Q 			: out STD_LOGIC_VECTOR(WIDTH-1 downto 0));
@@ -200,8 +177,6 @@ package riscv_pkg is
 	);
 	end component;
 	
-
-
 	component control is
 	port (
 		clk  		: in std_logic;
@@ -222,18 +197,23 @@ package riscv_pkg is
 	component genImm32 is
 		port (
 			instr	: in std_logic_vector(WORD_SIZE - 1 downto 0);
-			imm32 : out signed(WORD_SIZE-1 downto 0)
+			imm32 	: out signed(WORD_SIZE-1 downto 0)
 			);
 	end component;
 
-	component data_mem is
+	component memData is
+		generic (
+			WIDTH : natural := WORD_SIZE;
+			WADDR : natural := WORD_SIZE
+		); 
 		port
 		(
-			address	: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-			clock		: IN STD_LOGIC;
-			data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-			wren		: IN STD_LOGIC ;
-			q			: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+			address		: in std_logic_vector (WADDR-1 downto 0);
+			clk			: in std_logic;
+			data		: in std_logic_vector (WORD_SIZE-1 downto 0);
+			wren		: in std_logic;
+			rden 		: in std_logic;
+			Q			: out std_logic_vector (WORD_SIZE-1 downto 0)
 		);
 	end component;
 
@@ -245,10 +225,6 @@ package riscv_pkg is
 		);
 
 	end component;
-	
---	procedure mux2x1 (signal x0, x1	: in std_logic_vector(WORD_SIZE-1 downto 0); 
---							signal sel	: in std_logic;
---							signal z 	: out std_logic_vector(WORD_SIZE-1 downto 0) );
 	
 	
 end riscv_pkg;

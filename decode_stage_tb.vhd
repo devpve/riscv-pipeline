@@ -11,7 +11,6 @@ architecture tb_decode of testbench_decode is
 	component decode_stage is 
 		port (
 			clk 		: in std_logic;
-			PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 			f_breg_wr : in std_logic;
 			wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
 			reg_IF_ID : in std_logic_vector(63 downto 0);
@@ -54,7 +53,6 @@ architecture tb_decode of testbench_decode is
 		DUT : decode_stage
 			port map(
 				clk => clk_in,
-				PC => pc_in, 
 				f_breg_wr => f_breg_wr_in,
 				wb_rd => wb_rd_in,
 				reg_IF_ID => reg_IF_ID_in,
