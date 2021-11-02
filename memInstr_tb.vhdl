@@ -46,9 +46,10 @@ architecture tb_mem of testbench_mem is
 	stim_proc: process
 	begin
 
-		for i in 0 to 255 loop
-			address_in <= std_logic_vector(to_unsigned(i, 32));
+		for i in 0 to 10 loop
+			address_in <= std_logic_vector(to_unsigned(i, 32));	
 			wait for 10 ps;
+			assert(Q_out = std_logic_vector(to_unsigned(i, 32))) report "Failed result" severity error;
 		end loop;
 
 	wait;

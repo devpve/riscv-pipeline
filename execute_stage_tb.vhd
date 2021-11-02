@@ -8,36 +8,43 @@ end testbench_execute;
 -------------------------------------------------------------------------
 architecture tb_execute of testbench_execute is 
 
-	component decode_stage is 
-		port (
-			clk 		: in std_logic;
-			PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
-			f_breg_wr : in std_logic;
-			wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
-			reg_IF_ID : in std_logic_vector(63 downto 0);
-			reg_ID_EX : out std_logic_vector(179 downto 0)
-		);
-	end component;
-
 	component execute_stage is 
 		port (
 			clk 		: in std_logic;
-			PC 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 			reg_ID_EX : in std_logic_vector(179 downto 0);
 			pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
-			reg_EX_MEM : out std_logic_vector(72 downto 0));
+			reg_EX_MEM : out std_logic_vector(72 downto 0)
+			);
 	end component;
-	
 
-	signal clk_in, f_breg_wr_in : std_logic;
-	signal pc_in, pc_branch_out, wb_rd_in: std_logic_vector(WORD_SIZE-1 downto 0);
-	signal reg_IF_ID_in : std_logic_vector(63 downto 0);
-	signal reg_ID_EX_out : std_logic_vector(179 downto 0); 
+	-- fetch stage
+	signal clk_in 	: std_logic := '0';
+	signal PC_src_in : std_logic := '0';
+	signal branch_PC_in : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
+	signal reg_IF_ID_inout : std_logic_vector(63 downto 0);
+
+	-- decode stage
+	signal f_breg_wr_in : std_logic := '0';
+	signal wb_rd_in: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal reg_ID_EX_inout : std_logic_vector(179 downto 0); 
+	signal rd_in : std_logic_vector(BREG_IDX-1 downto 0);
+
+	-- other stages
+	alias alu_src_ID: std_logic is reg_ID_EX_inout(8);
+	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX_inout(10 downto 9);
+	
+	-- other signals
+	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(42 downto 11); 
+	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(74 downto 43);
+	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(106 downto 75);
+	alias IMM_ID: std_logic_vector(63 downto 0) is reg_ID_EX_inout(170 downto 107);
+	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX_inout(174 downto 171);
+	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX_inout(179 downto 175);
+
+	-- excute stage
+	signal pc_branch_out: std_logic_vector(WORD_SIZE-1 downto 0);
 	signal reg_EX_MEM_out : std_logic_vector(72 downto 0);
 
-	signal instr : std_logic_vector(WORD_SIZE-1 downto 0);
-
-	alias alu_src_ID: std_logic is reg_ID_EX_out(8);
 	-- alias for reg_EX_MEM
 	alias breg_wr_EX: std_logic is reg_EX_MEM_out(0);
 	alias mem2reg_EX: std_logic is reg_EX_MEM_out(1);
@@ -48,21 +55,28 @@ architecture tb_execute of testbench_execute is
 	alias RD_EX: std_logic_vector(BREG_IDX-1 downto 0) is reg_EX_MEM_out(72 downto 68);
 
 	begin 
-		DECODE : decode_stage
+		fetch : fetch_stage
 			port map(
 				clk => clk_in,
-				PC => pc_in, 
-				f_breg_wr => f_breg_wr_in,
-				wb_rd => wb_rd_in,
-				reg_IF_ID => reg_IF_ID_in,
-				reg_ID_EX => reg_ID_EX_out
+				PC_src => PC_src_in,
+				branch_PC => branch_PC_in, 
+				reg_IF_ID => reg_IF_ID_inout
 			);
 
-		EXECUTE : execute_stage
+		decode : decode_stage
+			port map(
+				clk => clk_in,
+				f_breg_wr => f_breg_wr_in,
+				rd => rd_in,
+				wb_rd => wb_rd_in,
+				reg_IF_ID => reg_IF_ID_inout,
+				reg_ID_EX => reg_ID_EX_inout
+			);
+
+		execute : execute_stage
 			port map (
 				clk => clk_in,
-				PC => pc_in, 
-				reg_ID_EX => reg_ID_EX_out,
+				reg_ID_EX => reg_ID_EX_inout,
 				pc_branch => pc_branch_out,
 				reg_EX_MEM => reg_EX_MEM_out
 			);
@@ -84,14 +98,14 @@ architecture tb_execute of testbench_execute is
 
 		-- #1: Testando iRType
 		-- add t0, zero, zero imm inexistente
-		instr <= X"000002b3"; 
-		alu_src_ID <= '1';
-		wait for 2 ps;  
-		reg_IF_ID_in <= instr & ZERO32;
-		wait for 5 ps;
-		assert(breg_wr_EX = '1') report "#1: BREG WRITE Fail" severity error;
+		wait for 1.5 ps;
+		assert(breg_wr_EX = '0') report "#1: BREG WRITE Fail" severity error;
+		assert(mem2reg_EX = '0') report "#1: MEM2REG Fail" severity error;
 		assert(ALU_RESULT_EX = ZERO32) report "#1: ALU RESULT Fail" severity error;
-		
+		assert(mem_wr_EX = '0') report "#1 MEM WRITE Fail" severity error;
+		assert(mem_rd_EX = '0') report "#1 MEM READ Fail" severity error;
+		--assert(RD2_EX = '')
+		assert(RD_EX = std_logic_vector(to_unsigned(5, 5))) report "#1: Failed to read rd" severity error;
 
 		---- #2: Testando I-type0
 		---- lw t0, 16(zero)

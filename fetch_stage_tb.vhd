@@ -20,8 +20,6 @@ architecture tb_fetch of testbench_fetch is
 	signal branch_PC_in : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 	signal reg_IF_ID_out : std_logic_vector(63 downto 0);
 
-	signal current_pc : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
-
 	begin 
 		DUT : fetch_stage
 			port map(clk => clk_in,
@@ -47,17 +45,17 @@ architecture tb_fetch of testbench_fetch is
 		-- TEST PC
 		-- Instruction is the same value as the address 
 		wait for 0.5 ns;
-		assert(reg_IF_ID_out = X"00000000" & X"00000000") report "Fetch: PC Zero fail" severity error;
+		assert(reg_IF_ID_out = X"000002b3" & X"00000000") report "Fetch: PC Zero fail" severity error;
 		wait for 2 ns;
-		assert(reg_IF_ID_out = X"00000004" & X"00000004") report "Fetch: PC 4 fail" severity error;
+		assert(reg_IF_ID_out = X"01002283" & X"00000004") report "Fetch: PC 4 fail" severity error;
 		wait for 2 ns;
-		assert(reg_IF_ID_out = X"00000008" & X"00000008") report "Fetch: PC 8 fail" severity error;
+		assert(reg_IF_ID_out = X"F9C00313" & X"00000008") report "Fetch: PC 8 fail" severity error;
 		wait for 2 ns;
 		
 		PC_src_in <= '1';
-		branch_PC_in <= std_logic_vector(to_unsigned(8, 32));
+		branch_PC_in <= std_logic_vector(to_unsigned(16, 32));
 		wait for 2 ns;
-		assert(reg_IF_ID_out = branch_PC_in & branch_PC_in) report "Fetch: Branch PC Fail" severity error;
+		assert(reg_IF_ID_out = X"00000001" & branch_PC_in) report "Fetch: Branch PC Fail" severity error;
 		
 		wait for 20 ns;
 	wait;

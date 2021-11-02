@@ -1,185 +1,3 @@
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memData.vhd failed with 4 errors.
-# Compile of memData.vhd failed with 3 errors.
-# Compile of memData.vhd was successful.
-# Compile of memData.vhd was successful.
-# Compile of memData_tb.vhd failed with 1 errors.
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# Compile of control.vhd was successful.
-# Compile of alu.vhdl was successful.
-# Compile of alu_tb.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of alu_ctr.vhd was successful.
-# Compile of execute_stage_tb.vhd was successful.
-# Compile of memData.vhd was successful.
-# Compile of memData_tb.vhd failed with 1 errors.
-# 19 compiles, 1 failed with 1 error.
-# Compile of memData_tb.vhd failed with 1 errors.
-# Compile of memData_tb.vhd failed with 1 errors.
-# Compile of memData_tb.vhd was successful.
-vsim -gui work.testbench_memdata(tb_memdata)
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:44:03 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-# ** Fatal: (vsim-3348) Port length (8) does not match actual length (32) for port "/testbench_memdata/DUT/address".
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_memdata/DUT File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memData.vhd Line: 17
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 17:44:05 on Oct 28,2021, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 14
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# Compile of control.vhd was successful.
-# Compile of alu.vhdl was successful.
-# Compile of alu_tb.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of alu_ctr.vhd was successful.
-# Compile of execute_stage_tb.vhd was successful.
-# Compile of memData.vhd was successful.
-# Compile of memData_tb.vhd was successful.
-# 19 compiles, 0 failed with no errors.
-vsim -gui work.testbench_memdata(tb_memdata)
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:44:58 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-add wave -position end sim:/testbench_memdata/DUT/*
-run
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# Compile of control.vhd was successful.
-# Compile of alu.vhdl was successful.
-# Compile of alu_tb.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of alu_ctr.vhd was successful.
-# Compile of execute_stage_tb.vhd was successful.
-# Compile of memData.vhd was successful.
-# Compile of memData_tb.vhd was successful.
-# 19 compiles, 0 failed with no errors.
-vsim -gui work.testbench_memdata(tb_memdata)
-# End time: 17:46:22 on Oct 28,2021, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 3
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:46:22 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-add wave -position end sim:/testbench_memdata/DUT/*
-run
-# Compile of memData_tb.vhd was successful.
-vsim -gui work.testbench_memdata(tb_memdata)
-# End time: 17:49:24 on Oct 28,2021, Elapsed time: 0:03:02
-# Errors: 0, Warnings: 2
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:49:24 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-add wave -position end sim:/testbench_memdata/DUT/*
-run
-# Compile of memData_tb.vhd was successful.
-vsim -gui work.testbench_memdata(tb_memdata)
-# End time: 17:50:31 on Oct 28,2021, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 2
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:50:31 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-add wave -position end sim:/testbench_memdata/DUT/*
-run
-# Compile of memData_tb.vhd was successful.
-vsim -gui work.testbench_memdata(tb_memdata)
-# End time: 17:51:41 on Oct 28,2021, Elapsed time: 0:01:10
-# Errors: 0, Warnings: 2
-# vsim -gui work.testbench_memdata(tb_memdata) 
-# Start time: 17:51:41 on Oct 28,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.riscv_pkg(body)
-# Loading work.testbench_memdata(tb_memdata)
-# Loading work.memdata(memdata_a)
-add wave -position end sim:/testbench_memdata/DUT/*
-run
-# Compile of memory_stage.vhd failed with 1 errors.
-# Compile of memory_stage.vhd failed with 1 errors.
-# Compile of memory_stage.vhd was successful.
-# Compile of writeback_stage.vhd was successful.
-# Compile of fetch_stage.vhd was successful.
-# Compile of riscv_pkg.vhd was successful.
-# Compile of memInstr.vhdl was successful.
-# Compile of memInstr_tb.vhdl was successful.
-# Compile of fetch_stage_tb.vhd was successful.
-# Compile of decode_stage.vhd was successful.
-# Compile of immediateGen.vhd was successful.
-# Compile of immediateGen_tb.vhd was successful.
-# Compile of xregs.vhdl was successful.
-# Compile of xregs_tb.vhdl was successful.
-# Compile of decode_stage_tb.vhd was successful.
-# Compile of control.vhd was successful.
-# Compile of alu.vhdl was successful.
-# Compile of alu_tb.vhd was successful.
-# Compile of execute_stage.vhd was successful.
-# Compile of alu_ctr.vhd was successful.
-# Compile of execute_stage_tb.vhd was successful.
-# Compile of memData.vhd was successful.
-# Compile of memData_tb.vhd was successful.
-# Compile of memory_stage.vhd was successful.
-# Compile of writeback_stage.vhd was successful.
-# 21 compiles, 0 failed with no errors.
 # Compile of fetch_stage.vhd was successful.
 # Compile of riscv_pkg.vhd was successful.
 # Compile of memInstr.vhdl was successful.
@@ -203,6 +21,1275 @@ run
 # Compile of writeback_stage.vhd was successful.
 # Compile of riscv_pipeline.vhd was successful.
 # 22 compiles, 0 failed with no errors.
+vsim -gui work.testbench_mem(tb_mem)
+# vsim -gui work.testbench_mem(tb_mem) 
+# Start time: 15:29:27 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_mem(tb_mem)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_mem/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem/DUT
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl failed with 2 errors.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
 # Compile of decode_stage_tb.vhd was successful.
-# End time: 18:46:06 on Oct 28,2021, Elapsed time: 0:54:25
-# Errors: 0, Warnings: 11
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 1 failed with 2 errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl failed with 1 errors.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 1 failed with 1 error.
+# Compile of memInstr_tb.vhdl was successful.
+vsim -gui work.testbench_mem(tb_mem)
+# End time: 15:36:21 on Nov 02,2021, Elapsed time: 0:06:54
+# Errors: 0, Warnings: 6
+# vsim -gui work.testbench_mem(tb_mem) 
+# Start time: 15:36:21 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_mem(tb_mem)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_mem/DUT/*
+run
+# ** Error: Failed result
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem/DUT
+# ** Error: Failed result
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 20 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 30 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 40 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 50 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 60 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 70 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 80 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 90 ps  Iteration: 0  Instance: /testbench_mem
+# ** Error: Failed result
+#    Time: 100 ps  Iteration: 0  Instance: /testbench_mem
+# Compile of memData.vhd was successful.
+# Compile of memInstr_tb.vhdl was successful.
+vsim -gui work.testbench_mem(tb_mem)
+# End time: 15:37:32 on Nov 02,2021, Elapsed time: 0:01:11
+# Errors: 11, Warnings: 4
+# vsim -gui work.testbench_mem(tb_mem) 
+# Start time: 15:37:32 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_mem(tb_mem)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_mem/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_mem/DUT
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 15:38:19 on Nov 02,2021, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 2
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 15:38:19 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+run
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 15:40:50 on Nov 02,2021, Elapsed time: 0:02:31
+# Errors: 0, Warnings: 4
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 15:40:50 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# Compile of fetch_stage_tb.vhd was successful.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 15:51:32 on Nov 02,2021, Elapsed time: 0:10:42
+# Errors: 0, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 15:51:32 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Fetch: PC 4 fail
+#    Time: 2500 ps  Iteration: 0  Instance: /testbench_fetch
+# ** Error: Fetch: PC 8 fail
+#    Time: 4500 ps  Iteration: 0  Instance: /testbench_fetch
+run
+run
+# Compile of fetch_stage_tb.vhd was successful.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 15:53:44 on Nov 02,2021, Elapsed time: 0:02:12
+# Errors: 2, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 15:53:44 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Fetch: PC 4 fail
+#    Time: 2500 ps  Iteration: 0  Instance: /testbench_fetch
+# ** Error: Fetch: PC 8 fail
+#    Time: 4500 ps  Iteration: 0  Instance: /testbench_fetch
+# ** Error: Fetch: Branch PC Fail
+#    Time: 8500 ps  Iteration: 0  Instance: /testbench_fetch
+# Compile of fetch_stage_tb.vhd was successful.
+vsim -gui work.testbench_fetch(tb_fetch)
+# End time: 15:57:24 on Nov 02,2021, Elapsed time: 0:03:40
+# Errors: 3, Warnings: 3
+# vsim -gui work.testbench_fetch(tb_fetch) 
+# Start time: 15:57:24 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_fetch(tb_fetch)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+add wave -position end sim:/testbench_fetch/DUT/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_fetch/DUT/InstrMEM
+# ** Error: Fetch: Branch PC Fail
+#    Time: 8500 ps  Iteration: 0  Instance: /testbench_fetch
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd failed with 4 errors.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 1 failed with 4 errors.
+# Compile of decode_stage_tb.vhd failed with 4 errors.
+# Compile of decode_stage_tb.vhd failed with 4 errors.
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:07:40 on Nov 02,2021, Elapsed time: 0:10:16
+# Errors: 1, Warnings: 7
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:07:40 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# ** Fatal: (vsim-3817) Port "rd" of entity "decode_stage" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/decode File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/decode_stage.vhd Line: 9
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:07:40 on Nov 02,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:09:02 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #1: PC Source fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: ALUOp Fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: ALUSrc Fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: Failed to read rd
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Fatal: (vsim-3734) Index value 1024 is out of range 0 to 1023.
+#    Time: 512 ps  Iteration: 2  Process: /testbench_decode/fetch/InstrMEM/line__46 File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+# Fatal error in Architecture RTL at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl line 46
+# 
+# HDL call sequence:
+# Stopped at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl 46 Architecture RTL
+# 
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:11:02 on Nov 02,2021, Elapsed time: 0:02:00
+# Errors: 5, Warnings: 4
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:11:02 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #1: PC Source fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: ALUOp Fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: ALUSrc Fail
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: Failed to read rd
+#    Time: 1 ps  Iteration: 0  Instance: /testbench_decode
+# ** Fatal: (vsim-3734) Index value 1024 is out of range 0 to 1023.
+#    Time: 512 ps  Iteration: 2  Process: /testbench_decode/fetch/InstrMEM/line__46 File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+# Fatal error in Architecture RTL at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl line 46
+# 
+# HDL call sequence:
+# Stopped at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl 46 Architecture RTL
+# 
+# WARNING: No extended dataflow license exists
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:13:33 on Nov 02,2021, Elapsed time: 0:02:31
+# Errors: 5, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:13:33 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #1: PC Fail to Read
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: Failed to read rd
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:14:30 on Nov 02,2021, Elapsed time: 0:00:57
+# Errors: 2, Warnings: 2
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:14:30 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #1: PC Fail to Read
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: Failed to read rd
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:16:31 on Nov 02,2021, Elapsed time: 0:02:01
+# Errors: 2, Warnings: 4
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:16:31 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #1: PC Fail to Read
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #1: Failed to read rd
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:19:25 on Nov 02,2021, Elapsed time: 0:02:54
+# Errors: 2, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:19:25 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# Compile of decode_stage_tb.vhd failed with 1 errors.
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:24:34 on Nov 02,2021, Elapsed time: 0:05:09
+# Errors: 0, Warnings: 4
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:24:34 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #2:Failed to read rd
+#    Time: 4 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:25:52 on Nov 02,2021, Elapsed time: 0:01:18
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:25:52 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #2:Failed to read rd
+#    Time: 4 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #3: PC Fail to Read
+#    Time: 6 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #3: Failed to read rd
+#    Time: 6 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: ALUSrc Fail
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: PC Fail to Read
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Immediate Fail
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Failed to read rd
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 Mem2Reg Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 ALUSrc Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 ALUOp Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5: PC Fail to Read
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Immediate Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: PC Source fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: Is Branch fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6 ALUSrc fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6 ALUOp fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: PC Fail to Read
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: Immediate Fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: PC Source fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Is Branch fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: ALUSrc fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: ALUOp fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: PC Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Regs(rd) Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Immediate Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: PC Source fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: Is Branch fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: ALUOp fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: PC Fail to Read
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:28:32 on Nov 02,2021, Elapsed time: 0:02:40
+# Errors: 29, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:28:32 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #4: ALUSrc Fail
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Immediate Fail
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Failed to read rd
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 Mem2Reg Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 ALUSrc Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #5 ALUOp Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Immediate Fail
+#    Time: 10 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: PC Source fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: Is Branch fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6 ALUSrc fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6 ALUOp fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #6: Immediate Fail
+#    Time: 12 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: PC Source fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Is Branch fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: ALUSrc fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: ALUOp fail
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Regs(rd) Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Immediate Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: PC Source fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: Is Branch fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #8: ALUOp fail
+#    Time: 16 ps  Iteration: 0  Instance: /testbench_decode
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:32:53 on Nov 02,2021, Elapsed time: 0:04:21
+# Errors: 21, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:32:53 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #4: Immediate Fail
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #4: Failed to read rd
+#    Time: 8 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Regs(rd) Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# ** Error: #7: Immediate Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:37:48 on Nov 02,2021, Elapsed time: 0:04:55
+# Errors: 4, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:37:48 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# ** Error: #7: Immediate Fail to Read
+#    Time: 14 ps  Iteration: 0  Instance: /testbench_decode
+# Compile of decode_stage_tb.vhd was successful.
+vsim -gui work.testbench_decode(tb_decode)
+# End time: 16:39:17 on Nov 02,2021, Elapsed time: 0:01:29
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_decode(tb_decode) 
+# Start time: 16:39:17 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_decode(tb_decode)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+add wave -position end sim:/testbench_decode/fetch/*
+add wave -position end sim:/testbench_decode/decode/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_decode/fetch/InstrMEM
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd failed with 5 errors.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 1 failed with 5 errors.
+# Compile of execute_stage_tb.vhd failed with 1 errors.
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 17:43:56 on Nov 02,2021, Elapsed time: 1:04:39
+# Errors: 0, Warnings: 6
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 17:43:56 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: BREG WRITE Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 17:52:04 on Nov 02,2021, Elapsed time: 0:08:08
+# Errors: 2, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 17:52:04 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/fetch/*
+add wave -position end sim:/testbench_execute/decode/*
+add wave -position end sim:/testbench_execute/execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: BREG WRITE Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of execute_stage_tb.vhd failed with 1 errors.
+# Compile of execute_stage_tb.vhd failed with 1 errors.
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:03:31 on Nov 02,2021, Elapsed time: 0:11:27
+# Errors: 2, Warnings: 5
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:03:31 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+add wave -position end sim:/testbench_execute/fetch/*
+add wave -position end sim:/testbench_execute/decode/*
+add wave -position end sim:/testbench_execute/execute/*
+run
+# Load canceled
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:04:14 on Nov 02,2021, Elapsed time: 0:00:43
+# Errors: 1, Warnings: 2
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:04:14 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/fetch/*
+add wave -position end sim:/testbench_execute/decode/*
+add wave -position end sim:/testbench_execute/execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:09:38 on Nov 02,2021, Elapsed time: 0:05:24
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:09:38 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:11:28 on Nov 02,2021, Elapsed time: 0:01:50
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:11:28 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# ** Fatal: (vsim-3734) Index value 1024 is out of range 0 to 1023.
+#    Time: 512 ps  Iteration: 2  Process: /testbench_execute/fetch/InstrMEM/line__46 File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl
+# Fatal error in Architecture RTL at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl line 46
+# 
+# HDL call sequence:
+# Stopped at C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/memInstr.vhdl 46 Architecture RTL
+# 
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:20:39 on Nov 02,2021, Elapsed time: 0:09:11
+# Errors: 2, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:20:39 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of execute_stage_tb.vhd was successful.
+vsim -gui work.testbench_execute(tb_execute)
+# End time: 18:23:41 on Nov 02,2021, Elapsed time: 0:03:02
+# Errors: 1, Warnings: 3
+# vsim -gui work.testbench_execute(tb_execute) 
+# Start time: 18:23:41 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_execute(tb_execute)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+add wave -position end sim:/testbench_execute/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_execute/fetch/InstrMEM
+# ** Error: #1: ALU RESULT Fail
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_execute
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of memory_stage_tb.vhd failed with 17 errors.
+# Compile of memory_stage_tb.vhd failed with 18 errors.
+# Compile of memory_stage_tb.vhd was successful.
+vsim -gui work.testbench_memstage(tb_memstage)
+# End time: 18:34:17 on Nov 02,2021, Elapsed time: 0:10:36
+# Errors: 1, Warnings: 7
+# vsim -gui work.testbench_memstage(tb_memstage) 
+# Start time: 18:34:17 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_memstage(tb_memstage)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+# Loading work.memory_stage(memory_a)
+# Loading work.memdata(memdata_a)
+add wave -position end sim:/testbench_memstage/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_memstage/fetch/InstrMEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 ps  Iteration: 3  Instance: /testbench_memstage/memory/DataMem
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# Compile of memory_stage_tb.vhd was successful.
+# Compile of writeback_stage_tb.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim -gui work.testbench_wbstage
+# End time: 18:43:51 on Nov 02,2021, Elapsed time: 0:09:34
+# Errors: 0, Warnings: 5
+# vsim -gui work.testbench_wbstage 
+# Start time: 18:43:51 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_wbstage(tb_wbstage)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+# Loading work.memory_stage(memory_a)
+# Loading work.memdata(memdata_a)
+# ** Warning: (vsim-3473) Component instance "writeback : writeback_stage" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_wbstage File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage_tb.vhd
+# Compile of fetch_stage.vhd was successful.
+# Compile of riscv_pkg.vhd was successful.
+# Compile of memInstr.vhdl was successful.
+# Compile of memInstr_tb.vhdl was successful.
+# Compile of fetch_stage_tb.vhd was successful.
+# Compile of decode_stage.vhd was successful.
+# Compile of immediateGen.vhd was successful.
+# Compile of immediateGen_tb.vhd was successful.
+# Compile of xregs.vhdl was successful.
+# Compile of xregs_tb.vhdl was successful.
+# Compile of decode_stage_tb.vhd was successful.
+# Compile of control.vhd was successful.
+# Compile of alu.vhdl was successful.
+# Compile of alu_tb.vhd was successful.
+# Compile of execute_stage.vhd was successful.
+# Compile of alu_ctr.vhd was successful.
+# Compile of execute_stage_tb.vhd was successful.
+# Compile of memData.vhd was successful.
+# Compile of memData_tb.vhd was successful.
+# Compile of memory_stage.vhd was successful.
+# Compile of writeback_stage.vhd was successful.
+# Compile of riscv_pipeline.vhd was successful.
+# Compile of memory_stage_tb.vhd was successful.
+# Compile of writeback_stage_tb.vhd was successful.
+# 24 compiles, 0 failed with no errors.
+vsim -gui work.testbench_wbstage(tb_wbstage)
+# End time: 18:44:43 on Nov 02,2021, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 3
+# vsim -gui work.testbench_wbstage(tb_wbstage) 
+# Start time: 18:44:43 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_wbstage(tb_wbstage)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+# Loading work.memory_stage(memory_a)
+# Loading work.memdata(memdata_a)
+# ** Warning: (vsim-3473) Component instance "writeback : writeback_stage" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_wbstage File: C:/Users/pv/Documents/UnB - Mestrado/3 Semestre/VLSI/riscv-pipeline/writeback_stage_tb.vhd
+add wave -position end sim:/testbench_wbstage/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_wbstage/fetch/InstrMEM
+# ** Error: #1: Failed to read rd
+#    Time: 2 ps  Iteration: 0  Instance: /testbench_wbstage
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 ps  Iteration: 3  Instance: /testbench_wbstage/memory/DataMem
+# Compile of writeback_stage_tb.vhd was successful.
+vsim -gui work.testbench_wbstage(tb_wbstage)
+# End time: 18:45:43 on Nov 02,2021, Elapsed time: 0:01:00
+# Errors: 1, Warnings: 5
+# vsim -gui work.testbench_wbstage(tb_wbstage) 
+# Start time: 18:45:43 on Nov 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_pkg(body)
+# Loading work.testbench_wbstage(tb_wbstage)
+# Loading work.fetch_stage(fetch_a)
+# Loading work.meminstr(rtl)
+# Loading work.decode_stage(decode_a)
+# Loading work.control(control_a)
+# Loading work.xreg(xreg_a)
+# Loading work.genimm32(genimm32_a)
+# Loading work.execute_stage(execute_a)
+# Loading work.alu_ctr(alu_ctr_a)
+# Loading work.alu(alu_a)
+# Loading work.memory_stage(memory_a)
+# Loading work.memdata(memdata_a)
+# Loading work.wb_stage(wb_a)
+add wave -position end sim:/testbench_wbstage/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_wbstage/fetch/InstrMEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 ps  Iteration: 3  Instance: /testbench_wbstage/memory/DataMem
+# End time: 18:47:22 on Nov 02,2021, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 3

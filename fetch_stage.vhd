@@ -1,3 +1,10 @@
+-------------------------------------------------------------------------
+-- Fetch Stage Calcula o proximo PC e pega a proxima instruçao 
+-- que sera executada utilizando a memoria de instrucoes.
+-- Sinais de entrada: clk, PC_src, branch_PC
+-- Sinais de saída: reg_IF_ID
+-- 		Composto por PC e Instrucao
+-------------------------------------------------------------------------
 library ieee;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;

@@ -50,6 +50,7 @@ architecture execute_a of execute_stage is
 	signal alu_src : std_logic_vector(WORD_SIZE-1 downto 0);
 
 	signal jump_addr: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal alu_result: std_logic_vector(WORD_SIZE-1 downto 0);
 
 	begin 
 
@@ -76,7 +77,7 @@ architecture execute_a of execute_stage is
 				opcode => alu_opcode,
 				A => RD1_ID,
 				B => alu_src,
-				aluout => ALU_RESULT_EX,
+				aluout => alu_result,
 				zero => zero_out
 			);
 
@@ -105,6 +106,7 @@ architecture execute_a of execute_stage is
 		mem2reg_EX <= mem2reg_ID;
 		mem_wr_EX <= mem_wr_ID;
 		mem_rd_EX <= mem_rd_ID;
+		ALU_RESULT_EX <= alu_result;
 		RD2_EX <= RD2_ID;
 		RD_EX <= RD_ID;
 

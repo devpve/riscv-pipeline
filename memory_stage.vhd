@@ -20,6 +20,7 @@ architecture memory_a of memory_stage is
 	alias RD2_EX: std_logic_vector(WORD_SIZE-1 downto 0) is reg_EX_MEM(67 downto 36);
 	alias RD_EX: std_logic_vector(BREG_IDX-1 downto 0) is reg_EX_MEM(72 downto 68);
 
+	-- alias for reg_MEM_WB
 	alias breg_wr_MEM: std_logic is reg_MEM_WB(0);
 	alias mem2reg_MEM: std_logic is reg_MEM_WB(1);
 	alias MEMRESULT_MEM: std_logic_vector(WORD_SIZE-1 downto 0) is reg_MEM_WB(33 downto 2);

@@ -28,7 +28,7 @@ architecture xreg_a of xreg is
 	type vector_array is array (WORD_SIZE-1 downto 0) of
 		std_logic_vector (WORD_SIZE-1 downto 0);
 
-	signal regs : vector_array := (OTHERS => (OTHERS => '1'));
+	signal regs : vector_array := (OTHERS => (OTHERS => '0'));
 	-- rst é async ou sync?
 begin
 	process(clk, wren)
