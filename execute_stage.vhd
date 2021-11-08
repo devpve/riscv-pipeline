@@ -5,9 +5,9 @@ use work.riscv_pkg.all;
 -------------------------------------------------------------------------
 entity execute_stage is 
 	port (clk 		: in std_logic;
-		  reg_ID_EX : in std_logic_vector(179 downto 0);
+		  reg_ID_EX : in std_logic_vector(149 downto 0);
 		  pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
-		  reg_EX_MEM : out std_logic_vector(72 downto 0));
+		  reg_EX_MEM : out std_logic_vector(105 downto 0));
 end execute_stage;
 -------------------------------------------------------------------------
 architecture execute_a of execute_stage is 
@@ -18,21 +18,23 @@ architecture execute_a of execute_stage is
 	alias mem2reg_ID: std_logic is reg_ID_EX(1);
 	alias pc_src_ID: std_logic is reg_ID_EX(2);
 	alias is_branch_ID: std_logic is reg_ID_EX(3);
-	alias is_jalx_ID: std_logic is reg_ID_EX(4);
-	alias is_jalr_ID: std_logic is reg_ID_EX(5);
-	alias mem_wr_ID: std_logic is reg_ID_EX(6);
-	alias mem_rd_ID: std_logic is reg_ID_EX(7);
-	alias alu_src_ID: std_logic is reg_ID_EX(8);
-	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX(10 downto 9);
+	alias is_lui_ID: std_logic is reg_ID_EX(4);
+	alias is_auipc_ID: std_logic is reg_ID_EX(5);
+	alias is_jalx_ID: std_logic is reg_ID_EX(6);
+	alias is_jalr_ID: std_logic is reg_ID_EX(7);
+	alias mem_wr_ID: std_logic is reg_ID_EX(8);
+	alias mem_rd_ID: std_logic is reg_ID_EX(9);
+	alias alu_src_ID: std_logic is reg_ID_EX(10);
+	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX(12 downto 11);
 	
 	-- other signals
-	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(42 downto 11); 
-	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(74 downto 43);
-	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(106 downto 75);
-	alias IMM_ID: std_logic_vector(63 downto 0) is reg_ID_EX(170 downto 107);
-	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX(174 downto 171);
+	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(44 downto 13); 
+	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(76 downto 45);
+	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(108 downto 77);
+	alias IMM_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(140 downto 109);
+	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX(144 downto 141);
 	alias FUNCT7_ID: std_logic is FUNCT3_ID(3);
-	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX(179 downto 175);
+	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX(149 downto 145);
 
 	-- alias for reg_EX_MEM
 	alias breg_wr_EX: std_logic is reg_EX_MEM(0);
@@ -42,15 +44,14 @@ architecture execute_a of execute_stage is
 	alias ALU_RESULT_EX: std_logic_vector(WORD_SIZE-1 downto 0) is reg_EX_MEM(35 downto 4);
 	alias RD2_EX: std_logic_vector(WORD_SIZE-1 downto 0) is reg_EX_MEM(67 downto 36);
 	alias RD_EX: std_logic_vector(BREG_IDX-1 downto 0) is reg_EX_MEM(72 downto 68);
+	alias NEXTPC_EX: std_logic_vector(WORD_SIZE-1 downto 0) is reg_EX_MEM(104 downto 73);
+	alias is_jalx_EX: std_logic is reg_EX_MEM(105);
 
 	signal zero_out : std_logic;
 	signal alu_opcode : std_logic_vector(3 downto 0);
-	signal is_jump : std_logic_vector(1 downto 0);
-	signal is_branch_res : std_logic_vector(1 downto 0);
-	signal alu_src : std_logic_vector(WORD_SIZE-1 downto 0);
-
-	signal jump_addr: std_logic_vector(WORD_SIZE-1 downto 0);
-	signal alu_result: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal is_branch_or_jump : std_logic_vector(3 downto 0);
+	signal alu_r1, alu_r2, alu_result: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal next_pc, imm_pc, jump_addr: std_logic_vector(WORD_SIZE-1 downto 0);	
 
 	begin 
 
@@ -64,39 +65,40 @@ architecture execute_a of execute_stage is
 				alu_ctr => alu_opcode
 			);
 
+		-- AUI PC MUX
+		with is_auipc_ID select 
+			alu_r1 <= 
+				RD1_ID when '0',
+				PC_ID when '1',
+				unaffected when others;
+
 		-- ALU Source MUX
 		with alu_src_ID select 
-			alu_src <= 
+			alu_r2 <= 
 				RD2_ID when '0', 
-				IMM_ID(31 downto 0)	when '1',
+				IMM_ID when '1',
 				unaffected when others;
 
 		-- ALU
 		alu_ex: alu 
 			port map (
 				opcode => alu_opcode,
-				A => RD1_ID,
-				B => alu_src,
+				A => alu_r1,
+				B => alu_r2,
 				aluout => alu_result,
 				zero => zero_out
 			);
 
- 		is_jump <= is_jalr_ID & is_jalx_ID;
-
-		-- JALX 
-		with is_jump select
-			jump_addr <= std_logic_vector(unsigned(PC_ID) + unsigned(IMM_ID(WORD_SIZE-1 downto 0))) when "01",
-						 std_logic_vector(unsigned(PC_ID) + unsigned(RD1_ID)) when "10",
-						 ZERO32 when others;
-
+		next_pc <= std_logic_vector(unsigned(PC_ID) + 1);
+		imm_pc <= std_logic_vector(unsigned(PC_ID) + unsigned(IMM_ID(WORD_SIZE-1 downto 0)));
 
 		-- BRANCH 
-		is_branch_res <= zero_out & is_branch_ID;
+		is_branch_or_jump <= is_jalr_ID & is_jalx_ID & alu_result(0) & is_branch_ID;
 
-		with is_branch_res select 
-			jump_addr <= std_logic_vector(unsigned(PC_ID) + 4) when "01",
-				         std_logic_vector(unsigned(PC_ID) + unsigned(IMM_ID(WORD_SIZE-1 downto 0))) when "10",
-			             ZERO32 when others;
+		with is_branch_or_jump select 
+			jump_addr <= imm_pc when "0100" | "0110" | "0011",	-- if jalx or take branch
+						 std_logic_vector(unsigned(PC_ID) + unsigned(RD1_ID)) when "1000" | "1010", -- when jalr
+			             next_pc when others;	-- when others just next pc
 
 
 		pc_branch <= jump_addr; 
@@ -109,5 +111,7 @@ architecture execute_a of execute_stage is
 		ALU_RESULT_EX <= alu_result;
 		RD2_EX <= RD2_ID;
 		RD_EX <= RD_ID;
+		NEXTPC_EX <= next_pc;
+		is_jalx_EX <= is_jalx_ID;
 
 end execute_a;

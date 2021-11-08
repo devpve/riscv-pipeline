@@ -10,8 +10,8 @@ architecture tb_memstage of testbench_memstage is
 
 	component memory_stage is 
 		port (clk 			: in std_logic;
-		  reg_EX_MEM 	: in std_logic_vector(72 downto 0);
-		  reg_MEM_WB 	: out std_logic_vector(70 downto 0));
+		  reg_EX_MEM 	: in std_logic_vector(105 downto 0);
+		  reg_MEM_WB 	: out std_logic_vector(103 downto 0));
 	end component;
 
 	-- fetch stage
@@ -23,24 +23,24 @@ architecture tb_memstage of testbench_memstage is
 	-- decode stage
 	signal f_breg_wr_in : std_logic := '0';
 	signal wb_rd_in: std_logic_vector(WORD_SIZE-1 downto 0);
-	signal reg_ID_EX_inout : std_logic_vector(179 downto 0); 
+	signal reg_ID_EX_inout : std_logic_vector(149 downto 0); 
 	signal rd_in : std_logic_vector(BREG_IDX-1 downto 0);
 
 	-- other stages
-	alias alu_src_ID: std_logic is reg_ID_EX_inout(8);
-	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX_inout(10 downto 9);
+	alias alu_src_ID: std_logic is reg_ID_EX_inout(10);
+	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX_inout(12 downto 11);
 	
 	-- other signals
-	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(42 downto 11); 
-	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(74 downto 43);
-	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(106 downto 75);
-	alias IMM_ID: std_logic_vector(63 downto 0) is reg_ID_EX_inout(170 downto 107);
-	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX_inout(174 downto 171);
-	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX_inout(179 downto 175);
+	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(44 downto 13); 
+	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(76 downto 45);
+	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(108 downto 77);
+	alias IMM_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX_inout(140 downto 109);
+	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX_inout(144 downto 141);
+	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX_inout(149 downto 145);
 
 	-- excute stage
 	signal pc_branch_out: std_logic_vector(WORD_SIZE-1 downto 0);
-	signal reg_EX_MEM_inout : std_logic_vector(72 downto 0);
+	signal reg_EX_MEM_inout : std_logic_vector(105 downto 0);
 
 	-- alias for reg_EX_MEM
 	alias breg_wr_EX: std_logic is reg_EX_MEM_inout(0);
@@ -52,7 +52,7 @@ architecture tb_memstage of testbench_memstage is
 	alias RD_EX: std_logic_vector(BREG_IDX-1 downto 0) is reg_EX_MEM_inout(72 downto 68);
 
 	-- memory stage
-	signal reg_MEM_WB_out : std_logic_vector(70 downto 0);
+	signal reg_MEM_WB_out : std_logic_vector(103 downto 0);
 	-- alias for reg_MEM_WB
 	alias breg_wr_MEM: std_logic is reg_MEM_WB_out(0);
 	alias mem2reg_MEM: std_logic is reg_MEM_WB_out(1);

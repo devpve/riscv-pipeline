@@ -104,26 +104,26 @@ package riscv_pkg is
 			rd 			: in std_logic_vector(BREG_IDX-1 downto 0);
 			wb_rd 		: in std_logic_vector(WORD_SIZE-1 downto 0);
 			reg_IF_ID 	: in std_logic_vector(63 downto 0);
-			reg_ID_EX 	: out std_logic_vector(179 downto 0)
+			reg_ID_EX 	: out std_logic_vector(149 downto 0)
 		);
 	end component;
 
 	component execute_stage is 
 		port (clk 		: in std_logic;
-			  reg_ID_EX : in std_logic_vector(179 downto 0);
+			  reg_ID_EX : in std_logic_vector(149 downto 0);
 			  pc_branch : out std_logic_vector(WORD_SIZE-1 downto 0);
-			  reg_EX_MEM : out std_logic_vector(72 downto 0));
+			  reg_EX_MEM : out std_logic_vector(105 downto 0));
 	end component;
 
 	component memory_stage is 
 		port (clk 			: in std_logic;
-			  reg_EX_MEM 	: in std_logic_vector(72 downto 0);
-			  reg_MEM_WB 	: out std_logic_vector(70 downto 0));
+			  reg_EX_MEM 	: in std_logic_vector(105 downto 0);
+			  reg_MEM_WB 	: out std_logic_vector(103 downto 0));
 	end component;
 
 	component wb_stage is 
 		port (clk 			: in std_logic;
-			  reg_MEM_WB 	: in std_logic_vector(70 downto 0);
+			  reg_MEM_WB 	: in std_logic_vector(103 downto 0);
 			  f_breg_wr 	: out std_logic;
 			  rd 			: out std_logic_vector(BREG_IDX-1 downto 0);
 			  wb_rd			: out std_logic_vector(WORD_SIZE-1 downto 0));
@@ -186,6 +186,8 @@ package riscv_pkg is
 		is_branch,
 		is_jalr,  
 		is_jalx,
+		is_lui, 
+		is_auipc,
 		mem_wr,
 		mem_rd,
 		mem2reg,

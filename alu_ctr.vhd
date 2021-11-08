@@ -22,7 +22,7 @@ architecture alu_ctr_a of alu_ctr is
 		begin 
 			if (clk'EVENT and clk='1') then
 				case alu_op is 
-					when "00" => -- rtype/look for funct3
+					when "00" => -- rtype/itype look for funct3
 						case funct3 is 
 							when iADDSUB3 =>
 								if (funct7 = '0') then
@@ -61,10 +61,33 @@ architecture alu_ctr_a of alu_ctr is
 								alu_control <= "1111";
 						end case;
 
-				when "01" => --load/store
+				when "01" => -- load/store/jalx/jalr/lui/auipc
 					alu_control <= ULA_ADD;
-				when "10" => -- branch
-					alu_control <= ULA_SUB;
+
+				when "10" => -- branching
+					case funct3 is 
+						when iBEQ3 =>
+							alu_control <= ULA_SEQ;
+						
+						when iBNE3 =>
+							alu_control <= ULA_SNE;
+						
+						when iBLT3 =>
+							alu_control <= ULA_SLT;
+
+						when iBGE3 =>
+							alu_control <= ULA_SGE;
+
+						when iBLTU3 =>
+							alu_control <= ULA_SLTU;
+
+						when iBGEU3 =>
+							alu_control <= ULA_SGEU;
+							
+						when others =>
+							alu_control <= "1111";
+					end case;
+
 				when others => 
 					alu_control <= "1111";
 			end case;

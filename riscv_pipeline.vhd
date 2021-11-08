@@ -4,10 +4,11 @@ use ieee.numeric_std.all;
 use work.riscv_pkg.all; 
 -------------------------------------------------------------------------
 entity riscv_pipeline is 
-	port (clk		: in std_logic;
-		clk_rom	: in std_logic;
+	port (
+		clk		: in std_logic;
 		rst	   : in std_logic;
-		data  	: out std_logic_vector(WORD_SIZE-1 downto 0));
+		data  	: out std_logic_vector(WORD_SIZE-1 downto 0)
+		);
 end riscv_pipeline;
 -------------------------------------------------------------------------
 architecture riscv_a of riscv_pipeline is 
@@ -17,9 +18,9 @@ architecture riscv_a of riscv_pipeline is
  	signal WriteRegister : std_logic_vector(BREG_IDX-1 downto 0);
 
  	signal reg_IFID : std_logic_vector(63 downto 0);
- 	signal reg_IDEX : std_logic_vector(179 downto 0);
- 	signal reg_EXMEM : std_logic_vector(72 downto 0);
- 	signal reg_MEMWB : std_logic_vector(70 downto 0);
+ 	signal reg_IDEX : std_logic_vector(149 downto 0);
+ 	signal reg_EXMEM : std_logic_vector(105 downto 0);
+ 	signal reg_MEMWB : std_logic_vector(103 downto 0);
 
 	begin 
 
@@ -41,7 +42,7 @@ architecture riscv_a of riscv_pipeline is
 				reg_ID_EX => reg_IDEX
 			);
 
-		execute: execute_stage  
+		execute: execute_stage   
 			port map ( 
 				clk => clk, 
 				reg_ID_EX => reg_IDEX, 
@@ -64,5 +65,7 @@ architecture riscv_a of riscv_pipeline is
 				rd => WriteRegister,
 				wb_rd => WriteData
 			);
+
+		data <= WriteData;
 
 end riscv_a;

@@ -36,7 +36,7 @@ architecture fetch_a of fetch_stage is
 			if (clk'EVENT and clk='1') then
 				-- MuxPC
 				with PC_src select 
-					current_pc <= std_logic_vector(unsigned(current_pc) + 4) when '0',
+					current_pc <= std_logic_vector(unsigned(current_pc) + 1) when '0',
 								  branch_PC when '1',
 						  		  ZERO32 when others;	
 			end if;

@@ -12,6 +12,8 @@ entity control is
 		is_branch,
 		is_jalr,  
 		is_jalx,
+		is_lui,
+		is_auipc,
 		mem_wr,
 		mem_rd,
 		mem2reg,
@@ -31,23 +33,44 @@ architecture control_a of control is
 			if (clk'EVENT and clk='1') then
 
 				case opcode is  
+					-- R TYPE Arithmetic
 					when iRType =>
 						pc_src <= '0';
 						is_branch <= '0';
 						is_jalr <= '0';
 						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
 						mem2reg <= '0';
-						breg_wr <= '0';
+						breg_wr <= '1';
 						mem_wr <= '0'; 
 						mem_rd <= '0';
 						alu_src <= '0';
 						alu_op <= "00";
-	 
+
+					-- I TYPE Arithmetic
+					when iIType =>
+						pc_src <= '0';
+						is_branch <= '0';
+						is_jalr <= '0';
+						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
+						mem2reg <= '0';
+						breg_wr <= '1';
+						mem_wr <= '0'; 
+						mem_rd <= '0';
+						alu_src <= '1';
+						alu_op <= "00";
+
+					-- Load Type
 					when iILType =>
 						pc_src <= '0';
 						is_branch <= '0';
 						is_jalr <= '0';
 						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
 						mem2reg <= '1';
 						breg_wr <= '1';
 						mem_wr <= '0'; 
@@ -55,11 +78,14 @@ architecture control_a of control is
 						alu_src <= '1';
 						alu_op <= "01";
 
+					-- Store Type
 					when iSType => 
 						pc_src <= '0';
 						is_branch <= '0';
 						is_jalr <= '0';
 						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
 						mem2reg <= '0';
 						breg_wr <= '0';
 						mem_wr <= '1'; 
@@ -67,11 +93,14 @@ architecture control_a of control is
 						alu_src <= '1';
 						alu_op <= "01";
 
+					-- Branch Type
 					when iBType => 
 						pc_src <= '1';
 						is_branch <= '1';
 						is_jalr <= '0';
 						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
 						mem2reg <= '0';
 						breg_wr <= '0';
 						mem_wr <= '0'; 
@@ -79,56 +108,65 @@ architecture control_a of control is
 						alu_src <= '1';
 						alu_op <= "10";
 
-					when iIType =>
-						pc_src <= '0';
-						is_branch <= '0';
-						is_jalr <= '0';
-						is_jalx <= '0';
-						mem2reg <= '0';
-						breg_wr <= '0';
-						mem_wr <= '0'; 
-						mem_rd <= '0';
-						alu_src <= '1';
-						alu_op <= "00";
-						-- shift instructions are different...
-
-					when iLUI => 
-						pc_src <= '0';
-						is_branch <= '0';
-						is_jalr <= '0';
-						is_jalx <= '0';
-						mem2reg <= '0';
-						breg_wr <= '1';
-						mem_wr <= '0'; 
-						mem_rd <= '0';
-						alu_src <= '1';
-						alu_op <= "11";
-
-					--when iAUIPC => 
-
-					when iJALR =>
-						pc_src <= '1';
-						is_branch <= '0';
-						is_jalr <= '1';
-						is_jalx <= '0';
-						mem2reg <= '0';
-						breg_wr <= '0';
-						mem_wr <= '0'; 
-						mem_rd <= '0';
-						alu_src <= '0';
-						alu_op <= "10";
-
+					-- Jump Type Jalx
 					when iJAL => 
 						pc_src <= '1';
 						is_branch <= '0';
 						is_jalr <= '0';
 						is_jalx <= '1';
+						is_lui <= '0';
+						is_auipc <= '0';
 						mem2reg <= '0';
 						breg_wr <= '0';
 						mem_wr <= '0'; 
 						mem_rd <= '0';
 						alu_src <= '1';
-						alu_op <= "10";
+						alu_op <= "01";
+
+					-- Jump Type Jalr
+					when iJALR =>
+						pc_src <= '1';
+						is_branch <= '0';
+						is_jalr <= '1';
+						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '0';
+						mem2reg <= '0';
+						breg_wr <= '0';
+						mem_wr <= '0'; 
+						mem_rd <= '0';
+						alu_src <= '0';
+						alu_op <= "01";
+
+					-- LUI
+					when iLUI => 
+						pc_src <= '0';
+						is_branch <= '0';
+						is_jalr <= '0';
+						is_jalx <= '0';
+						is_lui <= '1';
+						is_auipc <= '0';
+						mem2reg <= '0';
+						breg_wr <= '1';
+						mem_wr <= '0'; 
+						mem_rd <= '0';
+						alu_src <= '1';
+						alu_op <= "01";
+
+					-- AUI
+					when iAUIPC => 
+						pc_src <= '0';
+						is_branch <= '0';
+						is_jalr <= '0';
+						is_jalx <= '0';
+						is_lui <= '0';
+						is_auipc <= '1';
+						mem2reg <= '0';
+						breg_wr <= '1';
+						mem_wr <= '0'; 
+						mem_rd <= '0';
+						alu_src <= '1';
+						alu_op <= "01";
 
 					when others =>
 						pc_src <= '0';
@@ -141,7 +179,6 @@ architecture control_a of control is
 						mem_rd <= '0';
 						alu_src <= '0';
 						alu_op <= "11";
-					--when eCALL =>
 
 				end case;
 

@@ -9,7 +9,7 @@ entity decode_stage is
 		  rd 		: in std_logic_vector(BREG_IDX-1 downto 0);
 		  wb_rd 	: in std_logic_vector(WORD_SIZE-1 downto 0);
 		  reg_IF_ID : in std_logic_vector(63 downto 0);
-		  reg_ID_EX : out std_logic_vector(179 downto 0));
+		  reg_ID_EX : out std_logic_vector(149 downto 0));
 end decode_stage;
 -------------------------------------------------------------------------
 architecture decode_a of decode_stage is 
@@ -27,20 +27,22 @@ architecture decode_a of decode_stage is
 	alias mem2reg_ID: std_logic is reg_ID_EX(1);
 	alias pc_src_ID: std_logic is reg_ID_EX(2);
 	alias is_branch_ID: std_logic is reg_ID_EX(3);
-	alias is_jalx_ID: std_logic is reg_ID_EX(4);
-	alias is_jalr_ID: std_logic is reg_ID_EX(5);
-	alias mem_wr_ID: std_logic is reg_ID_EX(6);
-	alias mem_rd_ID: std_logic is reg_ID_EX(7);
-	alias alu_src_ID: std_logic is reg_ID_EX(8);
-	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX(10 downto 9);
+	alias is_lui_ID: std_logic is reg_ID_EX(4);
+	alias is_auipc_ID: std_logic is reg_ID_EX(5);
+	alias is_jalx_ID: std_logic is reg_ID_EX(6);
+	alias is_jalr_ID: std_logic is reg_ID_EX(7);
+	alias mem_wr_ID: std_logic is reg_ID_EX(8);
+	alias mem_rd_ID: std_logic is reg_ID_EX(9);
+	alias alu_src_ID: std_logic is reg_ID_EX(10);
+	alias alu_op_ID: std_logic_vector(1 downto 0) is reg_ID_EX(12 downto 11);
 	
 	-- other signals
-	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(42 downto 11); 
-	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(74 downto 43);
-	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(106 downto 75);
-	alias IMM_ID: std_logic_vector(63 downto 0) is reg_ID_EX(170 downto 107);
-	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX(174 downto 171);
-	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX(179 downto 175);
+	alias PC_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(44 downto 13); 
+	alias RD1_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(76 downto 45);
+	alias RD2_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(108 downto 77);
+	alias IMM_ID: std_logic_vector(WORD_SIZE-1 downto 0) is reg_ID_EX(140 downto 109);
+	alias FUNCT3_ID: std_logic_vector(3 downto 0) is reg_ID_EX(144 downto 141);
+	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX(149 downto 145);
 
 	signal immediate : signed(WORD_SIZE-1 downto 0);
 	signal rd1, rd2  : std_logic_vector(WORD_SIZE-1 downto 0);
@@ -56,6 +58,8 @@ architecture decode_a of decode_stage is
 				is_branch => is_branch_ID,
 				is_jalr => is_jalr_ID,
 				is_jalx => is_jalx_ID,
+				is_lui => is_lui_ID,
+				is_auipc => is_auipc_ID,
 				mem_wr => mem_wr_ID, 
 				mem_rd => mem_rd_ID, 
 				mem2reg => mem2reg_ID,
@@ -63,6 +67,11 @@ architecture decode_a of decode_stage is
 				breg_wr => breg_wr_ID
 			);
 
+		with is_lui_ID select 
+			rd1 <= ZERO32 when '1', 
+				unaffected when others;
+
+ 
 		-- Banco de registradores
 		regBank: xreg 
 			generic map (
@@ -89,7 +98,7 @@ architecture decode_a of decode_stage is
 		PC_ID <= PC_IF; 
 		RD1_ID <= rd1;
 		RD2_ID <= rd2;
-		IMM_ID <= ZERO32 & std_logic_vector(immediate); -- extend signal i dont know why
+		IMM_ID <= std_logic_vector(immediate); 
 		FUNCT3_ID <= instruction_IF(30) & instruction_IF(14 downto 12);
 		RD_ID <= instruction_IF(11 downto 7);
 
