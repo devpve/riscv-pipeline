@@ -1,6 +1,6 @@
 # RISC-V Pipeline
 
-![Processador RISC-V Pipeline](https://i.ibb.co/gP4GbsW/photo-2021-10-26-14-32-10.jpg)
+![Processador RISC-V Pipeline](https://i.imgur.com/JPNg88P.jpg)
 
 Implementação de um processador RISC V Pipeline na linguagem VHDL como projeto final da disciplina Arquiteturas VLSI. 
 Autor: Paulo Victor Gonçalves Farias / Matrícula: 20/0052039
