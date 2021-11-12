@@ -48,7 +48,7 @@ begin
 	Write: process(clk, wren, rden)
 	begin
 		-- write in memory
-		if (wren = '1') then 
+		if (clk'EVENT and clk='1' and wren = '1') then 
 			mem(to_integer(unsigned(address))) <= data;
 		end if; 
 

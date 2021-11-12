@@ -42,9 +42,8 @@ architecture alu_a of alu is
 	     bool2stdv(A /= B) when ULA_SNE,
 	     unaffected when others;
 
-	with aluout select 
-		zero <= '1' when X"00000001",
-				'0' when others;
+	
+	zero <= aluout(0);
 	
 end alu_a;
 ------------------------------------------------------------
