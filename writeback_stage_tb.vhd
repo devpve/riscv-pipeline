@@ -118,15 +118,4 @@ architecture tb_wbstage of testbench_wbstage is
 	wait;
 	end process;
  
-	stim_proc: process
-	begin
-
-		-- #1: Testando iRType
-		-- add t0, zero, zero imm inexistente
-		wait for 1.5 ps;
-		assert(f_breg_wr_inout = '0') report "#1: BREG WRITE Fail" severity error;
-		assert(rd_inout = std_logic_vector(to_unsigned(5, 5))) report "#1: Failed to read rd" severity error;
-	
-	wait;
-	end process;
 end tb_wbstage; 

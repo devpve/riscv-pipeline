@@ -45,7 +45,7 @@ architecture decode_a of decode_stage is
 	alias RD_ID: std_logic_vector(BREG_IDX-1 downto 0) is reg_ID_EX(149 downto 145);
 
 	signal immediate : signed(WORD_SIZE-1 downto 0);
-	signal rd1, rd2  : std_logic_vector(WORD_SIZE-1 downto 0);
+	signal rd1, rd2  : std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 
 	begin 
 
@@ -70,7 +70,6 @@ architecture decode_a of decode_stage is
 		with is_lui_ID select 
 			rd1 <= ZERO32 when '1', 
 				unaffected when others;
-
  
 		-- Banco de registradores
 		regBank: xreg 
@@ -94,12 +93,18 @@ architecture decode_a of decode_stage is
 			port map(instr => instruction_IF,
 					imm32 => immediate);
 
-		-- Final register: reg_ID_EX
-		PC_ID <= PC_IF; 
-		RD1_ID <= rd1;
-		RD2_ID <= rd2;
-		IMM_ID <= std_logic_vector(immediate); 
-		FUNCT3_ID <= instruction_IF(30) & instruction_IF(14 downto 12);
-		RD_ID <= instruction_IF(11 downto 7);
+		process (clk)
+		begin 
 
+			if (clk'EVENT and clk='1') then
+
+				-- Final register: reg_ID_EX
+				PC_ID <= PC_IF; 
+				RD1_ID <= rd1;
+				RD2_ID <= rd2;
+				IMM_ID <= std_logic_vector(immediate); 
+				FUNCT3_ID <= instruction_IF(30) & instruction_IF(14 downto 12);
+				RD_ID <= instruction_IF(11 downto 7);
+			end if;
+		end process;
 end decode_a; 

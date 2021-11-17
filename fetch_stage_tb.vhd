@@ -31,33 +31,12 @@ architecture tb_fetch of testbench_fetch is
 	begin
 	for i in 0 to 800 loop
 	clk_in <= '0';
-	wait for 1 ns;
+	wait for 1 ps;
 	clk_in <= '1';
-	wait for 1 ns;
+	wait for 1 ps;
 
 	end loop;
 	wait;
 	end process;
  
-	stim_proc: process
-	begin
-		 
-		-- TEST PC
-		-- Instruction is the same value as the address 
-		wait for 0.5 ns;
-		assert(reg_IF_ID_out = X"000002b3" & X"00000000") report "Fetch: PC Zero fail" severity error;
-		wait for 2 ns;
-		assert(reg_IF_ID_out = X"01002283" & X"00000004") report "Fetch: PC 4 fail" severity error;
-		wait for 2 ns;
-		assert(reg_IF_ID_out = X"F9C00313" & X"00000008") report "Fetch: PC 8 fail" severity error;
-		wait for 2 ns;
-		
-		PC_src_in <= '1';
-		branch_PC_in <= std_logic_vector(to_unsigned(16, 32));
-		wait for 2 ns;
-		assert(reg_IF_ID_out = X"00000001" & branch_PC_in) report "Fetch: Branch PC Fail" severity error;
-		
-		wait for 20 ns;
-	wait;
-	end process;
 end tb_fetch; 

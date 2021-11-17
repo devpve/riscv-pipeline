@@ -21,7 +21,7 @@ architecture RTL of memInstr is
 
 	impure function init_ram_hex return mem_type is
   		
-  		file text_file : text open read_mode is "memory_file.txt";
+  		file text_file : text open read_mode is "pipeline.txt";
   		variable text_line : line;
   		variable mem_content : mem_type;
 	

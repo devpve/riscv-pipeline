@@ -50,7 +50,7 @@ architecture execute_a of execute_stage is
 	signal zero_out : std_logic;
 	signal alu_opcode : std_logic_vector(3 downto 0);
 	signal is_branch_or_jump : std_logic_vector(3 downto 0);
-	signal alu_r1, alu_r2, alu_result: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal alu_r1, alu_r2, alu_result: std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 	signal next_pc, imm_pc, jump_addr: std_logic_vector(WORD_SIZE-1 downto 0);	
 
 	begin 
@@ -103,15 +103,20 @@ architecture execute_a of execute_stage is
 
 		pc_branch <= jump_addr; 
 
-		-- Final register
-		breg_wr_EX <= breg_wr_ID;
-		mem2reg_EX <= mem2reg_ID;
-		mem_wr_EX <= mem_wr_ID;
-		mem_rd_EX <= mem_rd_ID;
-		ALU_RESULT_EX <= alu_result;
-		RD2_EX <= RD2_ID;
-		RD_EX <= RD_ID;
-		NEXTPC_EX <= next_pc;
-		is_jalx_EX <= is_jalx_ID;
+		process (clk)
+		begin 
+			if (clk'EVENT and clk='1') then
+				-- Final register
+				breg_wr_EX <= breg_wr_ID;
+				mem2reg_EX <= mem2reg_ID;
+				mem_wr_EX <= mem_wr_ID;
+				mem_rd_EX <= mem_rd_ID;
+				ALU_RESULT_EX <= alu_result;
+				RD2_EX <= RD2_ID;
+				RD_EX <= RD_ID;
+				NEXTPC_EX <= next_pc;
+				is_jalx_EX <= is_jalx_ID;
+			end if;
+		end process;
 
 end execute_a;

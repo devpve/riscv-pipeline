@@ -29,20 +29,6 @@ architecture fetch_a of fetch_stage is
 
 	begin 
 
-		process (clk)
-		begin 
-
-			-- MuxPC
-			if (clk'EVENT and clk='1') then
-				-- MuxPC
-				with PC_src select 
-					current_pc <= std_logic_vector(unsigned(current_pc) + 1) when '0',
-								  branch_PC when '1',
-						  		  ZERO32 when others;	
-			end if;
-
-		end process;
-
 		-- InstrMem
 		InstrMEM: memInstr 
 		generic map (WIDTH => WORD_SIZE,
@@ -51,9 +37,22 @@ architecture fetch_a of fetch_stage is
 				  clk	=> clk,
 			      Q => instruction);
 
-		-- Output: Reg_IF_ID (PC + Instruction)
-		PC_IF <= current_pc;
-		instruction_IF <= instruction;
+		process (clk)
+		begin 
 
+			if (clk'EVENT and clk='1') then
+
+				-- MuxPC
+				with PC_src select 
+					current_pc <= std_logic_vector(unsigned(current_pc) + 1) when '0',
+								  branch_PC when '1',
+						  		  ZERO32 when others;
+						  		  
+				-- Output: Reg_IF_ID (PC + Instruction)
+				PC_IF <= current_pc;
+				instruction_IF <= instruction;	
+			end if;
+
+		end process;
 		
 end fetch_a; 

@@ -31,7 +31,7 @@ architecture memory_a of memory_stage is
 	alias NEXTPC_MEM: std_logic_vector(WORD_SIZE-1 downto 0) is reg_MEM_WB(102 downto 71);
 	alias is_jalx_MEM: std_logic is reg_MEM_WB(103);
 
-	signal mem_result: std_logic_vector(WORD_SIZE-1 downto 0);
+	signal mem_result: std_logic_vector(WORD_SIZE-1 downto 0) := ZERO32;
 
 	begin 
 
@@ -45,13 +45,21 @@ architecture memory_a of memory_stage is
 				  rden => mem_rd_EX,
 			      Q => mem_result);
 
-		-- final register
-		breg_wr_MEM <= breg_wr_EX;
-		mem2reg_MEM <= mem2reg_EX;
-		MEMRESULT_MEM <= mem_result;
-		ADDRESS_MEM <= ALU_RESULT_EX;
-		RD_MEM <= RD_EX;
-		NEXTPC_MEM <= NEXTPC_EX;
-		is_jalx_MEM <= is_jalx_EX;
+		process (clk)
+		begin 
+
+			if (clk'EVENT and clk='1') then
+				-- final register
+				breg_wr_MEM <= breg_wr_EX;
+				mem2reg_MEM <= mem2reg_EX;
+				MEMRESULT_MEM <= mem_result;
+				ADDRESS_MEM <= ALU_RESULT_EX;
+				RD_MEM <= RD_EX;
+				NEXTPC_MEM <= NEXTPC_EX;
+				is_jalx_MEM <= is_jalx_EX;
+			end if;
+		end process;
+
+
 
 end memory_a;

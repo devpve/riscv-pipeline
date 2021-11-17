@@ -34,8 +34,12 @@ architecture wb_a of wb_stage is
 				MEMRESULT_MEM when "01",
 				NEXTPC_MEM when "10",
 				unaffected when others;
-
-		f_breg_wr <= breg_wr_MEM;
-		rd <= RD_MEM;
-
+				
+		process (clk)
+		begin
+			if (clk'EVENT and clk='1') then
+				f_breg_wr <= breg_wr_MEM;
+				rd <= RD_MEM;
+			end if;
+		end process;
 end wb_a;

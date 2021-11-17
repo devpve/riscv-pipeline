@@ -79,13 +79,12 @@ package riscv_pkg is
 	constant ULA_SNE		: std_logic_vector(3 downto 0) := "1101";
 	
 	-- Aliases
-	component rv_pipe is
+	component riscv_pipeline is 
 		port (
 			clk		: in std_logic;
-			clk_rom	: in std_logic;
-			rst	   : in std_logic;
+			rst	   	: in std_logic;
 			data  	: out std_logic_vector(WORD_SIZE-1 downto 0)
-		);
+			);
 	end component;
 
 	component fetch_stage is 

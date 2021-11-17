@@ -6,7 +6,7 @@ use work.riscv_pkg.all;
 entity riscv_pipeline is 
 	port (
 		clk		: in std_logic;
-		rst	   : in std_logic;
+		rst	   	: in std_logic;
 		data  	: out std_logic_vector(WORD_SIZE-1 downto 0)
 		);
 end riscv_pipeline;
@@ -23,7 +23,7 @@ architecture riscv_a of riscv_pipeline is
  	signal reg_MEMWB : std_logic_vector(103 downto 0);
 
 	begin 
-
+ 
 		fetch: fetch_stage
 			port map (
 				clk => clk, 
@@ -67,5 +67,5 @@ architecture riscv_a of riscv_pipeline is
 			);
 
 		data <= WriteData;
-
+		
 end riscv_a;
